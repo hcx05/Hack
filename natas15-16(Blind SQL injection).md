@@ -34,3 +34,10 @@ while len(password) < 32:
 For Python, `f '...'` is an f-string, string in {} will be replaced by Python variables.
 
 For MySQL, `LIKE` is used for preform string comparison, `%` is an universal char in `LIKE` , usually, the case sensitivity of `LIKE` often depends on the column’s collation; in many cases, `LIKE` comparisons are case-insensitive, so we add `BINARY`.
+
+`requests` is a Python kit that helps you make HTTP requests(`GET / POST / PUT / DELETE`)
+``
+`r` is a reqonse object which contain `headers, text, content, elapsed`, etc.
+
+`r.text` is the source code(HTML) that the server responsed.
+

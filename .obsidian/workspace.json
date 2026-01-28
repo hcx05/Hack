@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "natas15-16(Blind SQL injection).md",
+                "file": "natas16-17(command substitution).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "natas15-16(Blind SQL injection)"
+              "title": "natas16-17(command substitution)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2670426c8d343def",
@@ -196,7 +196,7 @@
       "bases:建立新的 base": false
     }
   },
-  "active": "a4d2745499ffc9b5",
+  "active": "252d7e1dc7da06f6",
   "lastOpenFiles": [
     "natas16-17(command substitution).md",
     "natas15-16(Blind SQL injection).md",
