@@ -85,12 +85,12 @@ This returns any rows with a username ending with the letter n.
 | 3   | Axe Makers Ltd   | 2b Makers Unit, Market Road | London  | SE9 1KK  |
 `SELECT name,address,city,postcode from customers UNION SELECT company,address,city,postcode from suppliers;`
 
-| name | address | city |     |
-| ---- | ------- | ---- | --- |
-|      |         |      |     |
-|      |         |      |     |
-|      |         |      |     |
-|      |         |      |     |
-|      |         |      |     |
-|      |         |      |     |
+| name             | address                     | city       | postcode |
+| ---------------- | --------------------------- | ---------- | -------- |
+| Mr John Smith    | 123 Fake Street             | Manchester |          |
+| Mrs Jenny Palmer | 99 Green Road               |            |          |
+| Miss Sarah Lewis | 15 Fore Street              |            |          |
+| Widgets Ltd      | Unit 1a, Newby Estate       |            |          |
+| The Tool Company | 75 Industrial Road          |            |          |
+| Axe Makers Ltd   | 2b Makers Unit, Market Road |            |          |
 
