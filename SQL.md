@@ -9,5 +9,6 @@ SQL syntax is not case-sensitive.
 
 | id  |     |
 | --- | --- |
-| 1   |     |
 |     |     |
+
+
