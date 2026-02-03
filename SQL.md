@@ -7,8 +7,10 @@ SQL syntax is not case-sensitive.
 `select * from users;`
 
 
-| id  |     |
-| --- | --- |
-|     |     |
+| id  | username | password |
+| --- | -------- | -------- |
+| 1   | jon      | pass123  |
+| 2   | admin    | p4ssword |
+| 3   | martin   |          |
 
 
