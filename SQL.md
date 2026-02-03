@@ -72,4 +72,9 @@ This returns any rows with a username ending with the letter n.
 | 2   | admin    | p4ssword |
 **UNION**
 
+| id  |     |     |     |     |
+| --- | --- | --- | --- | --- |
+|     |     |     |     |     |
+|     |     |     |     |     |
+
 
