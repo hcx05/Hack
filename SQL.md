@@ -33,3 +33,8 @@ The following query, like the first, returns all the columns by using the * sele
 | id  | username | password |
 | --- | -------- | -------- |
 | 2   | admin    | pass123  |
+`select * from users where username != 'admin';`
+
+| id  | username | password |
+| --- | -------- | -------- |
+|     |          |          |
