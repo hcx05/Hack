@@ -67,6 +67,6 @@ This returns any rows with a username ending with the letter n.
 
 `select * from users where username like '%mi%';`
 
-| id  | username |     |
-| --- | -------- | --- |
-|     |          |     |
+| id  | username | password |
+| --- | -------- | -------- |
+| 2   | admin    | p4ssword |
