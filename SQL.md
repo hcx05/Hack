@@ -22,6 +22,6 @@ The first word SELECT, tells the database we want to retrieve some data; the * t
 | martin   | secret123 |
 `select * from users LIMIT 1;`
 
-|     |     |
-| --- | --- |
-|     |     |
+| id  | username | password |
+| --- | -------- | -------- |
+| 1   | jon      | pass123  |
