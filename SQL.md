@@ -78,10 +78,10 @@ This returns any rows with a username ending with the letter n.
 | 2   | Mrs Jenny Palmer | 99 Green Road   | Birmingham | B2 4KL   |
 | 3   | Miss Sarah Lewis | 15 Fore Street  | London     | NW12 3GH |
 
-| id  | company | address | city |     |
-| --- | ------- | ------- | ---- | --- |
-|     |         |         |      |     |
-|     |         |         |      |     |
-|     |         |         |      |     |
+| id  | company          | address                     | city    | postcode |
+| --- | ---------------- | --------------------------- | ------- | -------- |
+| 1   | Widgets Ltd      | Unit 1a, Newby Estate       | Bristol | BS19 4RT |
+| 2   | The Tool Company | 75 Industrial Road          | Norwich | N22 3DR  |
+| 3   | Axe Makers Ltd   | 2b Makers Unit, Market Road | London  | SE9 1KK  |
 
 
