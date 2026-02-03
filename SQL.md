@@ -94,7 +94,6 @@ This returns any rows with a username ending with the letter n.
 | The Tool Company | 75 Industrial Road          | Norwich    | N22 3DR  |
 | Axe Makers Ltd   | 2b Makers Unit, Market Road | London     | SE9 1KK  |
 **INSERT**
-The **INSERT** statement tells the database we wish to insert a new row of data into the table. **"into users"** tells the database which table we wish to insert the data into, **"(username,password)"** provides the columns we are providing data for and then **"values ('bob','password');"** provides the data for the previously specified columns.
 
 `insert into users (username,password) values ('bob','password123');`
 
@@ -105,3 +104,6 @@ The **INSERT** statement tells the database we wish to insert a new row of dat
 | 3   | amrtin   | secert123   |
 | 4   | bob      | password123 |
 **UPDATE**
+
+`update users SET username='root',password='pass123' where username='admin';`
+
