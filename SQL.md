@@ -35,6 +35,12 @@ The following query, like the first, returns all the columns by using the * sele
 | 2   | admin    | pass123  |
 `select * from users where username != 'admin';`
 
-| id  | username | password |
-| --- | -------- | -------- |
-|     |          |          |
+| id  | username | password  |
+| --- | -------- | --------- |
+| 1   | jon      | pass123   |
+| 3   | martin   | serect123 |
+`select * from users where username='admin' or username='jon';`
+
+|     |     |     |
+| --- | --- | --- |
+|     |     |     |
