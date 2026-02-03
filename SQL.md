@@ -54,4 +54,13 @@ The following query, like the first, returns all the columns by using the * sele
 
 | id  | username | password |
 | --- | -------- | -------- |
-| 2   | admin    | p$ssword |
+| 2   | admin    | p4ssword |
+`select * from users where username like '%n';`
+
+| id  | username |     |
+| --- | -------- | --- |
+|     |          |     |
+|     |          |     |
+|     |          |     |
+
+This returns any rows with a username ending with the letter n.
