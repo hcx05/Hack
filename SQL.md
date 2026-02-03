@@ -87,10 +87,10 @@ This returns any rows with a username ending with the letter n.
 
 | name             | address                     | city       | postcode |
 | ---------------- | --------------------------- | ---------- | -------- |
-| Mr John Smith    | 123 Fake Street             | Manchester |          |
-| Mrs Jenny Palmer | 99 Green Road               |            |          |
-| Miss Sarah Lewis | 15 Fore Street              |            |          |
-| Widgets Ltd      | Unit 1a, Newby Estate       |            |          |
-| The Tool Company | 75 Industrial Road          |            |          |
-| Axe Makers Ltd   | 2b Makers Unit, Market Road |            |          |
+| Mr John Smith    | 123 Fake Street             | Manchester | M2 3FJ   |
+| Mrs Jenny Palmer | 99 Green Road               | Birmingham | B2 4KL   |
+| Miss Sarah Lewis | 15 Fore Street              | London     | NW12 3GH |
+| Widgets Ltd      | Unit 1a, Newby Estate       | Bristol    | BS19 4RT |
+| The Tool Company | 75 Industrial Road          | Norwich    | N22 3DR  |
+| Axe Makers Ltd   | 2b Makers Unit, Market Road | London     | SE9 1KK  |
 
