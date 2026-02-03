@@ -50,3 +50,8 @@ The following query, like the first, returns all the columns by using the * sele
 | id  | username | password |
 | --- | -------- | -------- |
 | 2   | admin    | p4ssword |
+`select * from users where username like 'a%';`
+
+|     |     |
+| --- | --- |
+|     |     |
