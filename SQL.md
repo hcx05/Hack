@@ -113,4 +113,12 @@ This returns any rows with a username ending with the letter n.
 | 2   | root     | pass123     |
 | 3   | martin   | serect123   |
 | 4   | bob      | password123 |
-DELETE
+**DELETE**
+
+`delete from users where username='martin';`
+
+| id  | username | password    |
+| --- | -------- | ----------- |
+| 1   | jon      | pass123     |
+| 2   | root     | pass123     |
+| 3   | bob      | password123 |
