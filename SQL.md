@@ -107,10 +107,10 @@ This returns any rows with a username ending with the letter n.
 
 `update users SET username='root',password='pass123' where username='admin';`
 
-
-| id  | username | password |
-| --- | -------- | -------- |
-| 1   | jon      | pass123  |
-| 2   | root     | pass123  |
-| 3   | martin   |          |
-| 4   | bob      |          |
+| id  | username | password    |
+| --- | -------- | ----------- |
+| 1   | jon      | pass123     |
+| 2   | root     | pass123     |
+| 3   | martin   | serect123   |
+| 4   | bob      | password123 |
+DELETE
