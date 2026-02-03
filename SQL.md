@@ -93,4 +93,10 @@ This returns any rows with a username ending with the letter n.
 | Widgets Ltd      | Unit 1a, Newby Estate       | Bristol    | BS19 4RT |
 | The Tool Company | 75 Industrial Road          | Norwich    | N22 3DR  |
 | Axe Makers Ltd   | 2b Makers Unit, Market Road | London     | SE9 1KK  |
+**INSERT**
+The **INSERT** statement tells the database we wish to insert a new row of data into the table. **"into users"** tells the database which table we wish to insert the data into, **"(username,password)"** provides the columns we are providing data for and then **"values ('bob','password');"** provides the data for the previously specified columns.
+
+|     |     |
+| --- | --- |
+|     |     |
 
