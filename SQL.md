@@ -15,3 +15,8 @@ The first word SELECT, tells the database we want to retrieve some data; the * t
 
 `select username,password from users;`
 
+
+| username | password |
+| -------- | -------- |
+| jon      |          |
+|          |          |
