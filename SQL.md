@@ -25,3 +25,5 @@ The first word SELECT, tells the database we want to retrieve some data; the * t
 | id  | username | password |
 | --- | -------- | -------- |
 | 1   | jon      | pass123  |
+The following query, like the first, returns all the columns by using the * selector, and then the "`LIMIT 1`" clause forces the database to return only one row of data. Changing the query to 
+"`LIMIT 1,1`" forces the query to skip the first result, and then "`LIMIT 2,1`" skips the first two results, and so on.The first number tells the database how many results you wish to skip, and the second number tells the database how many rows to return.
