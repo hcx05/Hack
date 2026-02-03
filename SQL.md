@@ -13,3 +13,4 @@ SQL syntax is not case-sensitive.
 | 3   | martin   | serect123 |
 The first word SELECT, tells the database we want to retrieve some data; the * tells the database we want to receive back all columns from the table.
 
+select username,password from users;
