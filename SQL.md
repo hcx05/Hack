@@ -57,10 +57,16 @@ The following query, like the first, returns all the columns by using the * sele
 | 2   | admin    | p4ssword |
 `select * from users where username like '%n';`
 
+| id  | username | password  |
+| --- | -------- | --------- |
+| 1   | jon      | pass123   |
+| 2   | admin    | p4ssword  |
+| 3   | martin   | secert123 |
+
+This returns any rows with a username ending with the letter n.
+
+`select * from users where username like '%mi%';`
+
 | id  | username |     |
 | --- | -------- | --- |
 |     |          |     |
-|     |          |     |
-|     |          |     |
-
-This returns any rows with a username ending with the letter n.
