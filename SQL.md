@@ -20,3 +20,8 @@ The first word SELECT, tells the database we want to retrieve some data; the * t
 | jon      | pass123   |
 | admin    | p4ssword  |
 | martin   | secret123 |
+`select * from users LIMIT 1;`
+
+|     |     |
+| --- | --- |
+|     |     |
