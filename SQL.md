@@ -45,3 +45,8 @@ The following query, like the first, returns all the columns by using the * sele
 | --- | -------- | -------- |
 | 1   | jon      | pass123  |
 | 2   | admin    | p4ssword |
+`select * from users where username='admin' and password='p4ssword';`
+
+| id  | username | password |
+| --- | -------- | -------- |
+| 2   | admin    | p4ssword |
