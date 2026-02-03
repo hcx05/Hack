@@ -11,7 +11,7 @@ SQL syntax is not case-sensitive.
 | 1   | jon      | pass123   |
 | 2   | admin    | p4ssword  |
 | 3   | martin   | serect123 |
-The first word SELECT, tells the database we want to retrieve some data; the * tells the database we want to receive back all columns from the table.
+The first word SELECT, tells the database we want to retrieve some data; the * tells the database we want to receive back all ***columns*** from the table.
 
 `select username,password from users;`
 
@@ -30,6 +30,6 @@ The following query, like the first, returns all the columns by using the * sele
 
 `select * from users where username='admin';`
 
-| id  | username |
-| --- | -------- |
-|     |          |
+| id  | username | password |
+| --- | -------- | -------- |
+| 2   | admin    | pass123  |
