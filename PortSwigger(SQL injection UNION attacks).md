@@ -6,7 +6,7 @@ SELECT a, b FROM table1 UNION SELECT c, d FROM table2
 
 The `UNION` keyword enables you to execute one or more additional `SELECT` queries and append the results to the original query.
 
-To perform a SQL attack, attackers must find out:
+To perform a [[SQL]] attack, attackers must find out:
 	- How many columns are being returned from the original query.
 	- Which columns returned from the original query are of a suitable data type to hold the results from the injected query.
 
