@@ -41,6 +41,7 @@ The following query, like the first, returns all the columns by using the * sele
 | 3   | martin   | serect123 |
 `select * from users where username='admin' or username='jon';`
 
-|     |     |     |
-| --- | --- | --- |
-|     |     |     |
+| id  | username | password |
+| --- | -------- | -------- |
+| 1   | jon      | pass123  |
+| 2   | admin    | p4ssword |
