@@ -72,10 +72,16 @@ This returns any rows with a username ending with the letter n.
 | 2   | admin    | p4ssword |
 **UNION**
 
-| id  | name             | address         | city                                 | postcode |
-| --- | ---------------- | --------------- | ------------------------------------ | -------- |
-| 1   | Mr John Smith    | 123 Fake Street | \|   \|<br>\|---\|<br>\|Manchester\| |          |
-| 2   | Mrs Jenny Palmer | 99 Green Road   |                                      |          |
-| 3   | Miss Sarah Lewis | 15 Fore Street  |                                      |          |
+| id  | name             | address         | city       | postcode |
+| --- | ---------------- | --------------- | ---------- | -------- |
+| 1   | Mr John Smith    | 123 Fake Street | Manchester | M2 3FJ   |
+| 2   | Mrs Jenny Palmer | 99 Green Road   | Birmingham | B2 4KL   |
+| 3   | Miss Sarah Lewis | 15 Fore Street  | London     | NW12 3GH |
+
+| id  | company | address | city |     |
+| --- | ------- | ------- | ---- | --- |
+|     |         |         |      |     |
+|     |         |         |      |     |
+|     |         |         |      |     |
 
 
