@@ -83,6 +83,7 @@ This returns any rows with a username ending with the letter n.
 | 1   | Widgets Ltd      | Unit 1a, Newby Estate       | Bristol | BS19 4RT |
 | 2   | The Tool Company | 75 Industrial Road          | Norwich | N22 3DR  |
 | 3   | Axe Makers Ltd   | 2b Makers Unit, Market Road | London  | SE9 1KK  |
+
 `SELECT name,address,city,postcode from customers UNION SELECT company,address,city,postcode from suppliers;`
 
 | name             | address                     | city       | postcode |
@@ -122,6 +123,7 @@ This returns any rows with a username ending with the letter n.
 | 1   | jon      | pass123     |
 | 2   | root     | pass123     |
 | 3   | bob      | password123 |
+
 `delete from users;`
 
 | id  | username | password |
