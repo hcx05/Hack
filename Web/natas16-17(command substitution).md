@@ -3,7 +3,7 @@
 
 $(command substitution)
 
-```
+```python
 import requests
 import string
 
