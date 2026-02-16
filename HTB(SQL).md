@@ -1,6 +1,6 @@
 
 ---
-SQL : Structured Query Language
+[[SQL]] : Structured Query Language
 
 PII : Personally Identifiable Information
 
