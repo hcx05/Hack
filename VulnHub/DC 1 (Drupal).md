@@ -146,7 +146,7 @@ Drupalgeddon SQL Injection :
 CVE : Common Vulnerabilities and Exposures
 
 ```bash
-searchsploit -x 44449
+searchsploit -x 44449.rb
 
   Exploit: Drupal < 7.58 / < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote Code Execution
       URL: https://www.exploit-db.com/exploits/44449
@@ -156,6 +156,8 @@ searchsploit -x 44449
 File Type: Ruby script, ASCII text
 
 ```
+
+[[44449.rb breakdown]]
 
 ```bash
  searchsploit -m 44449
@@ -351,3 +353,4 @@ Hopefully you've enjoyed this and learned some new skills.
 You can let me know what you thought of this little journey
 by contacting me via Twitter - @DCAU7
 ```
+
