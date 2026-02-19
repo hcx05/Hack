@@ -234,7 +234,17 @@ script -qc /bin/bash /dev/null
 www-data@DC-1:/var/www$
 ```
 
-so now we get a stable reverse shell.
+script is a Linux tool to open a new pseudo-terminal(PTY) and record all the session. 
+
+```
+fork()
+openpty()
+exec()
+```
+
+-q : do not display banner -c : designate the command 
+
+So now we get a stable reverse shell.
 
 ```bash
 www-data@DC-1:/var/www$ id
