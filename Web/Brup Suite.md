@@ -29,3 +29,26 @@ After that, the attacker re-encrypts the data using the server’s real public k
 
 To prevent this type of attack, [[../Digital certificates]]are used.  
 Certificates allow the user to verify that a public key truly belongs to the intended server, preventing attackers from substituting their own keys.
+
+## Repeater 
+
+Burp Suite Repeater enables us to modify and resend intercepted requests to a target of our choosing. It allows us to take requests captured in the Burp Proxy and manipulate them, sending them repeatedly as needed. Alternatively, we can manually create requests from scratch, similar to using a command-line tool like cURL.
+
+Inspector : 
+
+Request Attributes : Alter elements related to the location, method, and protocol of the request. This includes modifying the desired resource to retrieve, changing the HTTP method from GET to another variant, or switching the protocol from HTTP/1 to HTTP/2
+
+Request Query Parameters :These refer to data sent to the server via the URL. For example, in a GET request like `https://admin.tryhackme.com/?redirect=false`, the query parameter **redirect** has a value of "false".
+
+Request Body Parameters : Similar to query parameters, but specific to POST requests. Any data sent as part of a POST request will be displayed in this section, allowing us to modify the parameters before resending.
+
+Request Cookies : This section contains a modifiable list of cookies sent with each request.
+
+Request Headers : It enables us to view, access, and modify (including adding or removing) any headers sent with our requests. Editing these headers can be valuable when examining how a web server responds to unexpected headers.
+
+Response Herders : This section displays the headers returned by the server in response to our request. It cannot be modified, as we have no control over the headers returned by the server. Note that this section becomes visible only after sending a request and receiving a response.
+
+
+
+
+

@@ -4,7 +4,7 @@
 Blind SQL injection : Occurs when an applicatoin is vulnerable to SQL injectoin, but HTTP responses do not contain the results of the relevent SQL query or the details of any database erroes.
 
 ```python
-import `requests`
+import requests
 import string
 
 url = "http://natas15.natas.labs.overthewire.org/"
@@ -33,7 +33,7 @@ while len(password) < 32:
 
 For Python, `f '...'` is an f-string, string in {} will be replaced by Python variables.
 
-For MySQL, `LIKE` is used for preform string comparison, `%` is an universal char in `LIKE` , usually, the case sensitivity of `LIKE` often depends on the column’s collation; in many cases, `LIKE` comparisons are case-insensitive, so we add `BINARY`.
+For MySQL, `LIKE` is used for preform string comparison, `%` is wildcard in `LIKE` , usually, the case sensitivity of `LIKE` often depends on the column’s collation; in many cases, `LIKE` comparisons are case-insensitive, so we add `BINARY`.
 
 `requests` is a Python kit that helps you make HTTP requests(`GET / POST / PUT / DELETE`)
 ``
