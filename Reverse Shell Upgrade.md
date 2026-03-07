@@ -28,4 +28,11 @@ After running `reset`, the terminal may prompt for a terminal type. Enter:
 xtrem
 ```
 
+If xtrem not found `Cntl+C` to suspend the reset process.
+
+```bash
+export TERM=linux
+export SHELL=bash
+```
+
 This ensures that the shell recognizes arrow keys, tab completion, and interactive commands.
