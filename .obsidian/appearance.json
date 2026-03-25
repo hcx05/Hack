@@ -1,1 +1,9 @@
-{}
+{
+  "cssTheme": "Vauxhall",
+  "interfaceFontFamily": "JetBrainsMono Nerd Font",
+  "textFontFamily": "JetBrainsMono Nerd Font",
+  "baseFontSize": 18,
+  "enabledCssSnippets": [
+    "tech"
+  ]
+}
