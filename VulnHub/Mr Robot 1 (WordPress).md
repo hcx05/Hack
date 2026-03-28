@@ -1,5 +1,8 @@
 
 ---
+tags
+	#SUID 
+---
 Finding fsocity.dic in robots.txt
 
 ```bash

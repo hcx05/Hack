@@ -1,5 +1,10 @@
 
 ---
+tags
+	#IDOR
+	#file_upload
+	#path_hijack
+---
 
 ## 1. Enumeration
 

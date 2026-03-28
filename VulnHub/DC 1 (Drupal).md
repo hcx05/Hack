@@ -1,5 +1,9 @@
 
 ---
+tags
+	#SUID
+---
+
 ```bash
 nmap -sV -sC -Pn 192.168.56.104                                                                                
 Starting Nmap 7.98 ( https://nmap.org ) at 2026-02-15 09:26 -0500

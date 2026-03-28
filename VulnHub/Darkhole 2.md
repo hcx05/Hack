@@ -1,5 +1,10 @@
 
 ---
+tags:
+	#SQLi
+	#git_leak
+	#cron
+---
 
 ## 1. Enumeration
 
