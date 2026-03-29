@@ -3,5 +3,6 @@
   "newLinkFormat": "relative",
   "promptDelete": false,
   "livePreview": false,
-  "vimMode": true
+  "vimMode": true,
+  "readableLineLength": true
 }
