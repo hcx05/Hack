@@ -26,6 +26,7 @@ shell.c :
 #include <stdio.h>
 #include <sys/types.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 void _init() { // execute when loaded.
     unsetenv("LD_PRELOAD"); // erase the trace.
