@@ -13,7 +13,8 @@ Special permission is given to each user it becomes **SUID, SGID, and sticky bit
 Find SIUD Files : 
 
 ```bash
-find / -perm -u=s -type f 2>/dev/null # replace = to + is fine.
+find / -user root -perm -4000 -exec ls -ldb {} \+ 2>/dev/null 
+	# replace = to + is fine.
 ```
 
 Some famous Linux / Unix executable commands that can allow privilege escalation: bash, cat, cp, echo, find, less, more, nano, nmap, Vim and etc.
@@ -33,3 +34,5 @@ Add a root user :
 ```bash
 openssl passwd -1 -salt HCX password
 ```
+
+If you find something interesting, go to the wed GTFOBins.
