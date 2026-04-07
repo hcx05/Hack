@@ -55,8 +55,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hack the Box/Facts.md",
-                "mode": "source",
+                "file": "Hack the Box/Active/Facts.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -228,16 +228,18 @@
   },
   "active": "a675213d314c7b7f",
   "lastOpenFiles": [
+    "Hack the Box/Academy",
+    "Hack the Box/Active",
     "Untitled.md",
     "Hack the Box/StartingPoint",
-    "Hack the Box/Facts.md",
-    "Hack the Box/Escape restricted shell.md",
+    "Hack the Box/Active/Facts.md",
+    "Hack the Box/Academy/Escape restricted shell.md",
     "Hack the Box/StartingPoint/HTB(FTP).md",
     "Hack the Box/StartingPoint/HTB(Redis).md",
     "Hack the Box/StartingPoint/HTB(SMB).md",
     "Hack the Box/StartingPoint/HTB(SQL).md",
     "Hack the Box/StartingPoint/HTB(telnet).md",
-    "Hack the Box/Inf_gathering.md",
+    "Hack the Box/Academy/Inf_gathering.md",
     "Web/AWS(Amazon Web Services).md",
     "Hack the Box/Facts",
     "Privilege Escalation/Linux/Capability.md",
@@ -263,7 +265,6 @@
     "VulnHub/assets",
     "Assets/Digital certificates/How do digital certificates work.png",
     "Web/File upload vulnerabilities",
-    "Web/Access control vulnerabilities",
-    "Untitled 1.base"
+    "Web/Access control vulnerabilities"
   ]
 }
