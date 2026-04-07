@@ -48,9 +48,23 @@
               "icon": "lucide-file",
               "title": "Capability"
             }
+          },
+          {
+            "id": "a675213d314c7b7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hack the Box/Facts.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Facts"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -212,10 +226,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "72a621b00c646a72",
+  "active": "a675213d314c7b7f",
   "lastOpenFiles": [
-    "Privilege Escalation/Linux/Capability.md",
+    "Untitled.md",
+    "Hack the Box/StartingPoint",
+    "Hack the Box/Facts.md",
     "Hack the Box/Escape restricted shell.md",
+    "Hack the Box/StartingPoint/HTB(FTP).md",
+    "Hack the Box/StartingPoint/HTB(Redis).md",
+    "Hack the Box/StartingPoint/HTB(SMB).md",
+    "Hack the Box/StartingPoint/HTB(SQL).md",
+    "Hack the Box/StartingPoint/HTB(telnet).md",
+    "Hack the Box/Inf_gathering.md",
+    "Web/AWS(Amazon Web Services).md",
+    "Hack the Box/Facts",
+    "Privilege Escalation/Linux/Capability.md",
     "Privilege Escalation/Linux/Escaping Restricted Shells.md",
     "Privilege Escalation/Linux/Kernel exploit.md",
     "Privilege Escalation/Linux/Linux Privilege Escalation - Wildcard Abuse.md",
@@ -226,31 +251,19 @@
     "Privilege Escalation/Linux/Reverse Shell Upgrade.md",
     "Privilege Escalation/Linux/Editing etc passwd File for Privilege Escalation.md",
     "Privilege Escalation/Linux/Enumeration.md",
-    "Untitled.md",
     "Privilege Escalation/Linux",
     "VulnHub/assets/Darkhole 2/file-20260328223032679.png",
-    "Hack the Box/HTB(FTP).md",
-    "Hack the Box/Inf_gathering.md",
     "Hack the Box/escape restricted shell.md",
     "VulnHub/Darkhole 1.md",
     "HacktheBox",
     "VulnHub/Darkhole 2.md",
     "VulnHub/Basic pentesting 1 (WordPress).md",
-    "VulnHub/Mr Robot 1 (WordPress).md",
-    "VulnHub/DC 1 (Drupal).md",
-    "Operating System/Ch5. CPU scheduling.md",
-    "Web/SSRF/SSRF with blacklist-based input filters.md",
-    "Web/SSRF/SSRF filters bypassing via open redirection.md",
-    "Web/SSRF/SSRF.md",
     "Untitled.base",
     "VulnHub/assets/Darkhole 2",
     "VulnHub/assets",
-    "Web/SQL/Postswigger(Retrieving hidden data).md",
     "Assets/Digital certificates/How do digital certificates work.png",
     "Web/File upload vulnerabilities",
     "Web/Access control vulnerabilities",
-    "Untitled 1.base",
-    "Untitled 2.base",
-    "Web/IDOR"
+    "Untitled 1.base"
   ]
 }
