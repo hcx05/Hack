@@ -8,63 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fde83978fa38cf23",
+            "id": "7b6898bbea51f292",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privilege Escalation/Linux/Linux Privilege Escalation - Wildcard Abuse.md",
+                "file": "Privilege Escalation/Linux/Vulnerable Services.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Linux Privilege Escalation - Wildcard Abuse"
-            }
-          },
-          {
-            "id": "a9c99304e15c7bde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Privilege Escalation/Linux/SUID Binaries.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "SUID Binaries"
-            }
-          },
-          {
-            "id": "72a621b00c646a72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Privilege Escalation/Linux/Capability.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Capability"
-            }
-          },
-          {
-            "id": "a675213d314c7b7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hack the Box/Active/Facts.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Facts"
+              "title": "Vulnerable Services"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -226,13 +183,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a675213d314c7b7f",
+  "active": "7b6898bbea51f292",
   "lastOpenFiles": [
+    "Privilege Escalation/Linux/Enumeration.md",
+    "Privilege Escalation/Linux/Capability.md",
+    "Privilege Escalation/Linux/SUID Binaries.md",
+    "Privilege Escalation/Linux/Vulnerable Services.md",
+    "Hack the Box/Active/Facts.md",
     "Hack the Box/Academy",
     "Hack the Box/Active",
-    "Untitled.md",
     "Hack the Box/StartingPoint",
-    "Hack the Box/Active/Facts.md",
     "Hack the Box/Academy/Escape restricted shell.md",
     "Hack the Box/StartingPoint/HTB(FTP).md",
     "Hack the Box/StartingPoint/HTB(Redis).md",
@@ -242,17 +202,14 @@
     "Hack the Box/Academy/Inf_gathering.md",
     "Web/AWS(Amazon Web Services).md",
     "Hack the Box/Facts",
-    "Privilege Escalation/Linux/Capability.md",
     "Privilege Escalation/Linux/Escaping Restricted Shells.md",
     "Privilege Escalation/Linux/Kernel exploit.md",
     "Privilege Escalation/Linux/Linux Privilege Escalation - Wildcard Abuse.md",
-    "Privilege Escalation/Linux/SUID Binaries.md",
     "44449.rb breakdown.md",
     "Privilege Escalation/Linux/Sudo.md",
     "Privilege Escalation/Linux/Snap.md",
     "Privilege Escalation/Linux/Reverse Shell Upgrade.md",
     "Privilege Escalation/Linux/Editing etc passwd File for Privilege Escalation.md",
-    "Privilege Escalation/Linux/Enumeration.md",
     "Privilege Escalation/Linux",
     "VulnHub/assets/Darkhole 2/file-20260328223032679.png",
     "Hack the Box/escape restricted shell.md",
@@ -264,7 +221,6 @@
     "VulnHub/assets/Darkhole 2",
     "VulnHub/assets",
     "Assets/Digital certificates/How do digital certificates work.png",
-    "Web/File upload vulnerabilities",
-    "Web/Access control vulnerabilities"
+    "Web/File upload vulnerabilities"
   ]
 }
