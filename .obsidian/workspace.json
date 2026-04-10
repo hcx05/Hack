@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "68c9077195316cd0",
+    "id": "502fc6ea60116a83",
     "type": "split",
     "children": [
       {
-        "id": "c2697d711cb6dbdd",
+        "id": "c89ef3cff2019bd3",
         "type": "tabs",
         "children": [
           {
-            "id": "7b6898bbea51f292",
+            "id": "e5aacbd0a00c6f5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privilege Escalation/Linux/Vulnerable Services.md",
+                "file": "Privilege Escalation/Linux/Capability.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Vulnerable Services"
+              "title": "Capability"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "780cff3f1bf6cb85",
+    "id": "d47fe7b041ecfb35",
     "type": "split",
     "children": [
       {
-        "id": "33cb13b389f74b58",
+        "id": "eb39243c3602fb82",
         "type": "tabs",
         "children": [
           {
-            "id": "c6e8795f66c26163",
+            "id": "6cd82194819e1039",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,11 +44,11 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "檔案瀏覽器"
             }
           },
           {
-            "id": "df7ccd1228fced95",
+            "id": "ac1ce0e2f6ffd910",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,67 +61,68 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜尋"
             }
           },
           {
-            "id": "c9215b330158a0b7",
+            "id": "b62dd5bb26c4b7ca",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "書籤"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 309.5
+    "width": 300
   },
   "right": {
-    "id": "237286e36018d52d",
+    "id": "90b0a7d47468edaf",
     "type": "split",
     "children": [
       {
-        "id": "7a2d521d098b7885",
+        "id": "a10872da88fad8ea",
         "type": "tabs",
         "children": [
           {
-            "id": "1c54fefb5f829402",
+            "id": "0d2b00c1d4561d2f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "VulnHub/Darkhole 2.md",
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "byModifiedTime",
+                "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Darkhole 2 的反向連結"
             }
           },
           {
-            "id": "e0354abbd4ada8ef",
+            "id": "cfb0c73673aaf083",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "natas16-17(command substitution).md",
+                "file": "VulnHub/Darkhole 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from natas16-17(command substitution)"
+              "title": "Darkhole 2 的對外連結"
             }
           },
           {
-            "id": "0f0bb3ea1b267374",
+            "id": "4e815298b756281f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,11 +133,11 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "標籤"
             }
           },
           {
-            "id": "2643a2afbaa67dc9",
+            "id": "2dace4a0ed8f2be2",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -146,26 +147,25 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "所有屬性"
             }
           },
           {
-            "id": "57a4330e2ecbb239",
+            "id": "9f0f6add43a0895a",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.base",
+                "file": "VulnHub/Darkhole 2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Darkhole 2 的大綱"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -174,53 +174,32 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false,
+      "bases:建立新的 base": false
     }
   },
-  "active": "7b6898bbea51f292",
+  "active": "e5aacbd0a00c6f5f",
   "lastOpenFiles": [
-    "Privilege Escalation/Linux/Enumeration.md",
-    "Privilege Escalation/Linux/Capability.md",
-    "Privilege Escalation/Linux/SUID Binaries.md",
-    "Privilege Escalation/Linux/Vulnerable Services.md",
-    "Hack the Box/Active/Facts.md",
-    "Hack the Box/Academy",
-    "Hack the Box/Active",
-    "Hack the Box/StartingPoint",
-    "Hack the Box/Academy/Escape restricted shell.md",
-    "Hack the Box/StartingPoint/HTB(FTP).md",
-    "Hack the Box/StartingPoint/HTB(Redis).md",
-    "Hack the Box/StartingPoint/HTB(SMB).md",
-    "Hack the Box/StartingPoint/HTB(SQL).md",
-    "Hack the Box/StartingPoint/HTB(telnet).md",
-    "Hack the Box/Academy/Inf_gathering.md",
-    "Web/AWS(Amazon Web Services).md",
-    "Hack the Box/Facts",
-    "Privilege Escalation/Linux/Escaping Restricted Shells.md",
-    "Privilege Escalation/Linux/Kernel exploit.md",
-    "Privilege Escalation/Linux/Linux Privilege Escalation - Wildcard Abuse.md",
-    "44449.rb breakdown.md",
-    "Privilege Escalation/Linux/Sudo.md",
-    "Privilege Escalation/Linux/Snap.md",
-    "Privilege Escalation/Linux/Reverse Shell Upgrade.md",
-    "Privilege Escalation/Linux/Editing etc passwd File for Privilege Escalation.md",
-    "Privilege Escalation/Linux",
-    "VulnHub/assets/Darkhole 2/file-20260328223032679.png",
-    "Hack the Box/escape restricted shell.md",
+    "VulnHub/DC 1 (Drupal).md",
     "VulnHub/Darkhole 1.md",
-    "HacktheBox",
-    "VulnHub/Darkhole 2.md",
     "VulnHub/Basic pentesting 1 (WordPress).md",
-    "Untitled.base",
-    "VulnHub/assets/Darkhole 2",
-    "VulnHub/assets",
-    "Assets/Digital certificates/How do digital certificates work.png",
-    "Web/File upload vulnerabilities"
+    "Privilege Escalation/Linux/Reverse Shell Upgrade.md",
+    "Privilege Escalation/Linux/Linux Privilege Escalation - Wildcard Abuse.md",
+    "Privilege Escalation/Linux/Kernel exploit.md",
+    "Privilege Escalation/Linux/Editing etc passwd File for Privilege Escalation.md",
+    "Privilege Escalation/Linux/Capability.md",
+    "Privilege Escalation/Linux/Enumeration.md",
+    "Privilege Escalation/Linux/Vulnerable Services.md",
+    "Privilege Escalation/Linux/SUID Binaries.md",
+    "VulnHub/Darkhole 2.md",
+    "Privilege Escalation/Linux/Snap.md",
+    "Privilege Escalation/Linux/Sudo.md",
+    "Hack the Box/StartingPoint/HTB(FTP).md",
+    "Hack the Box/Active/Facts.md"
   ]
 }
