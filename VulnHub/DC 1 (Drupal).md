@@ -161,7 +161,7 @@ File Type: Ruby script, ASCII text
 
 ```
 
-[[44449.rb breakdown]]
+[[../CVE-2018-7600 breakdown]]
 
 ```bash
  searchsploit -m 44449

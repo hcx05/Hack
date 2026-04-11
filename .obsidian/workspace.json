@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hack the Box/Active/Wingdata.md",
+                "file": "CVE-2025-4517 breakdown.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Wingdata"
+              "title": "CVE-2025-4517 breakdown"
             }
           }
         ],
@@ -200,10 +200,10 @@
   },
   "active": "b01e4b33f52b042c",
   "lastOpenFiles": [
-    "CVE-2025-4517 breakdown.md",
-    "44449.rb breakdown.md",
-    "Asymmetric encryption.md",
+    "CVE-2018-7600 breakdown.md",
     "Hack the Box/Active/Wingdata.md",
+    "CVE-2025-4517 breakdown.md",
+    "Asymmetric encryption.md",
     "Privilege Escalation/Linux/Capability.md",
     "VulnHub/DC 1 (Drupal).md",
     "VulnHub/Darkhole 1.md",
