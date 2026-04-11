@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privilege Escalation/Linux/Capability.md",
+                "file": "Hack the Box/Active/Wingdata.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Capability"
+              "title": "Wingdata"
+            }
+          },
+          {
+            "id": "b01e4b33f52b042c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hack the Box/Active/Wingdata.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Wingdata"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,8 +198,13 @@
       "bases:建立新的 base": false
     }
   },
-  "active": "e5aacbd0a00c6f5f",
+  "active": "b01e4b33f52b042c",
   "lastOpenFiles": [
+    "CVE-2025-4517 breakdown.md",
+    "44449.rb breakdown.md",
+    "Asymmetric encryption.md",
+    "Hack the Box/Active/Wingdata.md",
+    "Privilege Escalation/Linux/Capability.md",
     "VulnHub/DC 1 (Drupal).md",
     "VulnHub/Darkhole 1.md",
     "VulnHub/Basic pentesting 1 (WordPress).md",
@@ -192,7 +212,6 @@
     "Privilege Escalation/Linux/Linux Privilege Escalation - Wildcard Abuse.md",
     "Privilege Escalation/Linux/Kernel exploit.md",
     "Privilege Escalation/Linux/Editing etc passwd File for Privilege Escalation.md",
-    "Privilege Escalation/Linux/Capability.md",
     "Privilege Escalation/Linux/Enumeration.md",
     "Privilege Escalation/Linux/Vulnerable Services.md",
     "Privilege Escalation/Linux/SUID Binaries.md",
