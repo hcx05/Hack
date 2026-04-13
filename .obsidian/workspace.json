@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CVE-2025-4517 breakdown.md",
-                "mode": "preview",
+                "file": "Assets/Project.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "CVE-2025-4517 breakdown"
+              "title": "Project"
+            }
+          },
+          {
+            "id": "f3688f4d0555345e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cron jobs abuse.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Cron jobs abuse"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -198,11 +212,13 @@
       "bases:建立新的 base": false
     }
   },
-  "active": "b01e4b33f52b042c",
+  "active": "f3688f4d0555345e",
   "lastOpenFiles": [
+    "Assets/Project.md",
+    "Cron jobs abuse.md",
+    "CVE-2025-4517 breakdown.md",
     "CVE-2018-7600 breakdown.md",
     "Hack the Box/Active/Wingdata.md",
-    "CVE-2025-4517 breakdown.md",
     "Asymmetric encryption.md",
     "Privilege Escalation/Linux/Capability.md",
     "VulnHub/DC 1 (Drupal).md",
