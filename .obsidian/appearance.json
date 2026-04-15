@@ -4,6 +4,7 @@
   "textFontFamily": "JetBrainsMono Nerd Font",
   "baseFontSize": 18,
   "enabledCssSnippets": [
+    "tech02",
     "tech"
   ],
   "theme": "obsidian"
