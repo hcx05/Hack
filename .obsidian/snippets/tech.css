@@ -75,130 +75,172 @@
 ============================ Folder Title Names =============================
 */
 
-/* ------------------------------- Assets -------------------------------- */
-.nav-folder-title[data-path^="Assets"] {
+/* ------------------------------- Recon & Footprinting -------------------------------- */
+.nav-folder-title[data-path^="01.Recon & Footprinting"] {
   color: var(--cyan);
   --nav-item-color-hover: color-mix(in srgb, var(--cyan) var(--fg-contrast-amount), var(--contrast-color));
   --nav-item-background-hover: color-mix(in srgb, var(--cyan) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--cyan) 40%, transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--cyan) 60%, transparent);
 }
-.nav-folder-title[data-path^="Assets"]:hover {
+.nav-folder-title[data-path^="01.Recon & Footprinting"]:hover {
   --nav-collapse-icon-color: color-mix(in srgb, var(--cyan) 60%, var(--contrast-color));
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Assets"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="01.Recon & Footprinting"]) {
   --nav-indentation-guide-color: color-mix(in srgb, var(--cyan) var(--medium-contrast-amount), transparent);
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Assets"]) .nav-file-title {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="01.Recon & Footprinting"]) .nav-file-title {
   color: color-mix(in srgb, var(--cyan) var(--medium-contrast-amount), var(--default-text-color));
   --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--cyan) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--cyan) 40%, transparent);
   --nav-item-background-active: color-mix(in srgb, var(--cyan) var(--active-contrast-amount), transparent);
 }
 
-/* ------------------------------- Hack the Box -------------------------------- */
-.nav-folder-title[data-path^="Hack the Box"] {
+/* ------------------------------- Post Exploitation Exploitation -------------------------------- */
+.nav-folder-title[data-path^="02.Post Exploitation Exploitation"] {
   color: var(--light-blue);
   --nav-item-color-hover: color-mix(in srgb, var(--light-blue) var(--fg-contrast-amount), var(--contrast-color));
   --nav-item-background-hover: color-mix(in srgb, var(--light-blue) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--light-blue) 40%, transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--light-blue) 60%, transparent);
 }
-.nav-folder-title[data-path^="Hack the Box"]:hover {
+.nav-folder-title[data-path^="02.Post Exploitation Exploitation"]:hover {
   --nav-collapse-icon-color: color-mix(in srgb, var(--light-blue) 60%, var(--contrast-color));
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Hack the Box"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="02.Post Exploitation Exploitation"]) {
   --nav-indentation-guide-color: color-mix(in srgb, var(--light-blue) var(--medium-contrast-amount), transparent);
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Hack the Box"]) .nav-file-title {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="02.Post Exploitation Exploitation"]) .nav-file-title {
   color: color-mix(in srgb, var(--light-blue) var(--medium-contrast-amount), var(--default-text-color));
   --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--light-blue) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--light-blue) 40%, transparent);
   --nav-item-background-active: color-mix(in srgb, var(--light-blue) var(--active-contrast-amount), transparent);
 }
 
-/* ------------------------------- Operating System -------------------------------- */
-.nav-folder-title[data-path^="Operating System"] {
+/* ------------------------------- Host Assault -------------------------------- */
+.nav-folder-title[data-path^="03.Host Assault"] {
   color: var(--blue);
   --nav-item-color-hover: color-mix(in srgb, var(--blue) var(--fg-contrast-amount), var(--contrast-color));
   --nav-item-background-hover: color-mix(in srgb, var(--blue) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--blue) 40%, transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--blue) 60%, transparent);
 }
-.nav-folder-title[data-path^="Operating System"]:hover {
+.nav-folder-title[data-path^="03.Host Assault"]:hover {
   --nav-collapse-icon-color: color-mix(in srgb, var(--blue) 60%, var(--contrast-color));
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Operating System"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="03.Host Assault"]) {
   --nav-indentation-guide-color: color-mix(in srgb, var(--blue) var(--medium-contrast-amount), transparent);
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Operating System"]) .nav-file-title {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="03.Host Assault"]) .nav-file-title {
   color: color-mix(in srgb, var(--blue) var(--medium-contrast-amount), var(--default-text-color));
   --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--blue) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--blue) 40%, transparent);
   --nav-item-background-active: color-mix(in srgb, var(--blue) var(--active-contrast-amount), transparent);
 }
 
-/* ------------------------------- Privilege Escalation -------------------------------- */
-.nav-folder-title[data-path^="Privilege Escalation"] {
+/* ------------------------------- Network Pivoting -------------------------------- */
+.nav-folder-title[data-path^="04.Network Pivoting"] {
   color: var(--blue-violet);
   --nav-item-color-hover: color-mix(in srgb, var(--blue-violet) var(--fg-contrast-amount), var(--contrast-color));
   --nav-item-background-hover: color-mix(in srgb, var(--blue-violet) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--blue-violet) 40%, transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--blue-violet) 60%, transparent);
 }
-.nav-folder-title[data-path^="Privilege Escalation"]:hover {
+.nav-folder-title[data-path^="04.Network Pivoting"]:hover {
   --nav-collapse-icon-color: color-mix(in srgb, var(--blue-violet) 60%, var(--contrast-color));
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Privilege Escalation"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="04.Network Pivoting"]) {
   --nav-indentation-guide-color: color-mix(in srgb, var(--blue-violet) var(--medium-contrast-amount), transparent);
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Privilege Escalation"]) .nav-file-title {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="04.Network Pivoting"]) .nav-file-title {
   color: color-mix(in srgb, var(--blue-violet) var(--medium-contrast-amount), var(--default-text-color));
   --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--blue-violet) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--blue-violet) 40%, transparent);
   --nav-item-background-active: color-mix(in srgb, var(--blue-violet) var(--active-contrast-amount), transparent);
 }
 
-/* ------------------------------- VulnHub -------------------------------- */
-.nav-folder-title[data-path^="VulnHub"] {
+/* ------------------------------- Pwn VulnHub Binary -------------------------------- */
+.nav-folder-title[data-path^="05.Pwn VulnHub Binary"] {
   color: var(--purple);
   --nav-item-color-hover: color-mix(in srgb, var(--purple) var(--fg-contrast-amount), var(--contrast-color));
   --nav-item-background-hover: color-mix(in srgb, var(--purple) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--purple) 40%, transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--purple) 60%, transparent);
 }
-.nav-folder-title[data-path^="VulnHub"]:hover {
+.nav-folder-title[data-path^="05.Pwn VulnHub Binary"]:hover {
   --nav-collapse-icon-color: color-mix(in srgb, var(--purple) 60%, var(--contrast-color));
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="VulnHub"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05.Pwn VulnHub Binary"]) {
   --nav-indentation-guide-color: color-mix(in srgb, var(--purple) var(--medium-contrast-amount), transparent);
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="VulnHub"]) .nav-file-title {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05.Pwn VulnHub Binary"]) .nav-file-title {
   color: color-mix(in srgb, var(--purple) var(--medium-contrast-amount), var(--default-text-color));
   --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--purple) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--purple) 40%, transparent);
   --nav-item-background-active: color-mix(in srgb, var(--purple) var(--active-contrast-amount), transparent);
 }
 
-/* ------------------------------- Web -------------------------------- */
-.nav-folder-title[data-path^="Web"] {
+/* ------------------------------- Post Exploitation -------------------------------- */
+.nav-folder-title[data-path^="06.Post Exploitation"] {
   color: var(--red);
   --nav-item-color-hover: color-mix(in srgb, var(--red) var(--fg-contrast-amount), var(--contrast-color));
   --nav-item-background-hover: color-mix(in srgb, var(--red) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--red) 40%, transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--red) 60%, transparent);
 }
-.nav-folder-title[data-path^="Web"]:hover {
+.nav-folder-title[data-path^="06.Post Exploitation"]:hover {
   --nav-collapse-icon-color: color-mix(in srgb, var(--red) 60%, var(--contrast-color));
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Web"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="06.Post Exploitation"]) {
   --nav-indentation-guide-color: color-mix(in srgb, var(--red) var(--medium-contrast-amount), transparent);
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Web"]) .nav-file-title {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="06.Post Exploitation"]) .nav-file-title {
   color: color-mix(in srgb, var(--red) var(--medium-contrast-amount), var(--default-text-color));
   --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--red) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--red) 40%, transparent);
   --nav-item-background-active: color-mix(in srgb, var(--red) var(--active-contrast-amount), transparent);
+}
+
+/* ------------------------------- CheatSheets & Methodology -------------------------------- */
+.nav-folder-title[data-path^="00.CheatSheets & Methodology"] {
+  color: var(--red);
+  --nav-item-color-hover: color-mix(in srgb, var(--red) var(--fg-contrast-amount), var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb, var(--red) var(--bg-contrast-amount), transparent);
+  --background-modifier-border-focus: color-mix(in srgb, var(--red) 40%, transparent);
+  --nav-collapse-icon-color: color-mix(in srgb, var(--red) 60%, transparent);
+}
+.nav-folder-title[data-path^="00.CheatSheets & Methodology"]:hover {
+  --nav-collapse-icon-color: color-mix(in srgb, var(--red) 60%, var(--contrast-color));
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="00.CheatSheets & Methodology"]) {
+  --nav-indentation-guide-color: color-mix(in srgb, var(--red) var(--medium-contrast-amount), transparent);
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="00.CheatSheets & Methodology"]) .nav-file-title {
+  color: color-mix(in srgb, var(--red) var(--medium-contrast-amount), var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--red) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
+  --background-modifier-border-focus: color-mix(in srgb, var(--red) 40%, transparent);
+  --nav-item-background-active: color-mix(in srgb, var(--red) var(--active-contrast-amount), transparent);
+}
+
+/* ------------------------------- Target Machine -------------------------------- */
+.nav-folder-title[data-path^="07.Target Machine"] {
+  color: var(--cyan);
+  --nav-item-color-hover: color-mix(in srgb, var(--cyan) var(--fg-contrast-amount), var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb, var(--cyan) var(--bg-contrast-amount), transparent);
+  --background-modifier-border-focus: color-mix(in srgb, var(--cyan) 40%, transparent);
+  --nav-collapse-icon-color: color-mix(in srgb, var(--cyan) 60%, transparent);
+}
+.nav-folder-title[data-path^="07.Target Machine"]:hover {
+  --nav-collapse-icon-color: color-mix(in srgb, var(--cyan) 60%, var(--contrast-color));
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="07.Target Machine"]) {
+  --nav-indentation-guide-color: color-mix(in srgb, var(--cyan) var(--medium-contrast-amount), transparent);
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="07.Target Machine"]) .nav-file-title {
+  color: color-mix(in srgb, var(--cyan) var(--medium-contrast-amount), var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--cyan) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
+  --background-modifier-border-focus: color-mix(in srgb, var(--cyan) 40%, transparent);
+  --nav-item-background-active: color-mix(in srgb, var(--cyan) var(--active-contrast-amount), transparent);
 }
 
 /* 1. 全域放大側邊欄文字 */
