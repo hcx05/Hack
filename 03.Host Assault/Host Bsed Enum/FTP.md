@@ -137,7 +137,7 @@ ftp> put testupload.txt
 
 ### Footprinting the Service
 #### Service Interaction
- If necessary, we can, of course, use other applications such as `netcat` or `telnet` to interact with the FTP server.
+If necessary, we can, of course, use other applications such as `netcat` or `telnet` to interact with the FTP server.
 ```bash
 nc -nv 10.129.14.136 21
 ```
