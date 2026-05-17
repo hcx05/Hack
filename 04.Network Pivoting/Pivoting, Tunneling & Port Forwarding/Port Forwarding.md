@@ -93,6 +93,24 @@ exploit(multi/handler) > set LPORT 8081 LPORT => 8081 msf exploit(multi/handler)
 
 Listening to a [Windows](../../03.Host%20Assault/Shell/Reverse%20shell/Windows.md).
 
+### Netsh
+
+
+---
+#### Using Netsh.exe to Port Forward
+```cmd
+C:\Windows\system32> netsh.exe interface portproxy add v4tov4 listenport=8080 listenaddress=[pivot host ip] connectport=3389 connectaddress=[target ip]
+```
+#### Verifying Port Forward
+```cmd
+C:\Windows\system32> netsh.exe interface portproxy show v4tov4
+
+Listen on ipv4:            Connect to ipv4:
+
+Address         Port       Address         Port
+--------------- ---------- --------------- ----------
+10.129.15.150   8080       172.16.5.25     3389
+```
 
 
 
