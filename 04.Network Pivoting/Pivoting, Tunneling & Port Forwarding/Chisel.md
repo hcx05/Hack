@@ -16,7 +16,7 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.2.linux-amd64.ta
 # Go Environment Configurations
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 ```
 #### Cloning Chisel
 ```bash
@@ -53,13 +53,13 @@ hcx05@htb[/htb]$ scp chisel_prod ubuntu@[Pivot host ip]:~/
 ```
 #### Running the Chisel Server on the Pivot Host
 ```bash
-ubuntu@WEB01:~$ ./chisel_pord server -p 443 --socks5
+ubuntu@WEB01:~$ ./chisel_prod server -p 443 --socks5
 ```
 #### Connecting to the Chisel Server
 ```bash
-hcx05@htb[/htb]$ ./chisel client -v 10.129.202.64:1234 socks
+hcx05@htb[/htb]$ ./chisel_prod client -v [Pivot host ip]:443 socks
 ```
-Then, eddit `/tec/proxychains.conf`
+Then, eddit `/etc/proxychains.conf`
 ### Reverse Pivot
 #### Starting the Chisel Server on our Attack Host
 ```bash
