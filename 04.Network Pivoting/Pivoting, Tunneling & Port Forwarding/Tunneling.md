@@ -67,13 +67,43 @@ echo y | plink.exe -ssh -D 9050 ubuntu@10.129.15.50 -pw [password] -N
 The Windows equivalent of `proxychains`, it **routes** traffic from apps (like `MSTSC`) into the SOCKS tunnel created by **Plink** (`127.0.0.1:9050`).
 
 Plink builds the **Pipe**; Proxifier pushes the **Traffic** into it.
+### ICMP Tunneling with SOCKS
+ICMP tunneling encapsulates your traffic within `ICMP packets` 
+containing `echo requests` and `responses`.
+#### ptunnel-ng
+```bash
+hcx05@htb[/htb]$ git clone https://github.com/utoni/ptunnel-ng.git
+```
+#### Building Ptunnel-ng use a static binary
+```bash
+hcx05@htb[/htb]$ sudo apt install automake autoconf -y hcx05@htb[/htb]$ cd ptunnel-ng/ 
+hcx05@htb[/htb]$ sed -i '$s/.*/LDFLAGS=-static "${NEW_WD}\/configure" --enable-static $@ \&\& make clean \&\& make -j${BUILDJOBS:-4} all/' autogen.sh 
+hcx05@htb[/htb]$ ./autogen.sh
+```
+#### Transferring Ptunnel-ng to the Pivot Host
+```bash
+scp -r ptunnel-ng ubuntu@[Pivt host ip]:~/
+```
+#### Starting the Server on the Target Host
+```bash
+ubuntu@WEB01:~/ptunnel-ng/src$ sudo ./ptunnel-ng -r[Target host ip] -R[Target host Port]
 
-
-
-
-
-
-
+[sudo] password for ubuntu: 
+./ptunnel-ng: /lib/x86_64-linux-gnu/libselinux.so.1: no version information available 
+(required by ./ptunnel-ng) 
+[inf]: Starting ptunnel-ng 1.42. 
+[inf]: (c) 2004-2011 Daniel Stoedle, <daniels@cs.uit.no> 
+[inf]: (c) 2017-2019 Toni Uhlig, <matzeton@googlemail.com> 
+[inf]: Security features by Sebastien Raveau, <sebastien.raveau@epita.fr> 
+[inf]: Forwarding incoming ping packets over TCP. 
+[inf]: Ping proxy is listening in privileged mode. 
+[inf]: Dropping privileges now.
+```
+#### Connecting to Server from Attack Host
+```bash
+hcx05@htb[/htb]$ sudo ./ptunnel-ng -p[Pivot host ip] -l[Local Port] -r[Target host ip] -R[Target host port]
+#sudo: Client needs to forgery and sent ICMP Echo Request(ping packet), this behavior required privilege(RAW Socket).
+```
 
 
 

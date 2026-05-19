@@ -69,8 +69,10 @@ hcx05@htb[/htb]$ sudo ./chisel_prod server --reverse -v -p 1234 --socks5
 ```bash
 ubuntu@WEB01$ ./chisel_prod client -v 10.10.14.17:1234 R:socks
 ```
-
-
+When we specify the target ip and port, we don't need to configurate `proxychains.conf`. 
+```bash
+ubuntu@WEB01$ ./chisel_prod client -v 10.10.14.17:1234 R:[target ip]:[target port]
+```
 
 
 
