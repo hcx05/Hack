@@ -76,7 +76,8 @@ hcx05@htb[/htb]$ git clone https://github.com/utoni/ptunnel-ng.git
 ```
 #### Building Ptunnel-ng use a static binary
 ```bash
-hcx05@htb[/htb]$ sudo apt install automake autoconf -y hcx05@htb[/htb]$ cd ptunnel-ng/ 
+hcx05@htb[/htb]$ sudo apt install automake autoconf -y 
+hcx05@htb[/htb]$ cd ptunnel-ng/ 
 hcx05@htb[/htb]$ sed -i '$s/.*/LDFLAGS=-static "${NEW_WD}\/configure" --enable-static $@ \&\& make clean \&\& make -j${BUILDJOBS:-4} all/' autogen.sh 
 hcx05@htb[/htb]$ ./autogen.sh
 ```
