@@ -54,6 +54,8 @@ hcx05@htb[/htb]$ curl -k 'imaps://10.129.14.128' --user user:p4ssw0rd
 #### OpenSSL - TLS Encrypted Interaction
 ```bash
 openssl s_client -connect 10.129.14.128:pop3s
+
+#-crlf: Change \n to \r\n in IMAP/SMTP/POP3/HTTP
 ```
 
 ```bash
