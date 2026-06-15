@@ -118,7 +118,7 @@ hcx05@htb[/htb]$ onesixtyone -c /opt/useful/seclists/Discovery/SNMP/snmp.txt 10.
 Scanning 1 hosts, 3220 communities
 10.129.14.128 [public] Linux htb 5.11.0-37-generic #41~20.04.2-Ubuntu SMP Fri Sep 24 09:06:38 UTC 2021 x86_64
 ```
- We can use the tool [crunch](https://secf00tprint.github.io/blog/passwords/crunch/advanced/en) to create custom wordlists in case they use nonstanderd community string.
+We can use the tool [crunch](https://secf00tprint.github.io/blog/passwords/crunch/advanced/en) to create custom wordlists in case they use nonstanderd community string.
 #### Braa
 ```bash
 hcx05@htb[/htb]$ sudo apt install braa
