@@ -53,6 +53,7 @@ Show cracked password
 ```bash
 hashcat -m 0 e3e3ec5831ad5e7288241960e5d4fdb8 --show
 ```
+#### Rules
 The rule files that come with hashcat are typically found under `/usr/share/hashcat/rules`
 ```bash
 hcx05@htb[/htb]$ hashcat -a 0 -m 0 1b0556a75770563578569ae21392630c /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule
@@ -81,6 +82,49 @@ Hardware.Mon.#1..: Util: 47%
 
 Started: Sat Apr 19 09:16:35 2025
 Stopped: Sat Apr 19 09:16:37 2025
+```
+
+|**Function**|**Description**|
+|---|---|
+|`:`|Do nothing|
+|`l`|Lowercase all letters|
+|`u`|Uppercase all letters|
+|`c`|Capitalize the first letter and lowercase others|
+|`sXY`|Replace all instances of X with Y|
+|`$!`|Add the exclamation character at the end|
+#### Generate mutated string
+```bash
+hashcat --force password.list -r custom.rule --stdout | sort -u > mut_password.list
+```
+
+```bash
+hcx05@htb[/htb]$ cat mut_password.list
+#--force: Ignore the warning.
+#--stdout: DOn't compute the Hash, just output the mutated result.
+
+password
+Password
+passw0rd
+Passw0rd
+p@ssword
+P@ssword
+P@ssw0rd
+password!
+Password!
+passw0rd!
+p@ssword!
+Passw0rd!
+P@ssword!
+p@ssw0rd!
+P@ssw0rd!
+```
+### Generating wordlists using CeWL
+```bash
+cewl https://www.inlanefreight.com -d 4 -m 6 --lowercase -w inlane.wordlist
+#-d: depth
+#-m: the minimum length of the word
+#--lowercase: Convert all charctor to lowercase
+#-w: write a file
 ```
 #### Mask attack
 |Symbol|Charset|
