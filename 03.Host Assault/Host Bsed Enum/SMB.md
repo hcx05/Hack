@@ -1,6 +1,6 @@
 
 ---
-SMB: Server Message Block
+SMB: Server Message Block, also known as [Common Internet File System](https://cifs.com/) (`CIFS`).
 
 Is a client-server protocol that regulates access to files and entire directories and other network resources such as printers, routers, or interfaces released for the network. Which is in the application layer.
 

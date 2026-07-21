@@ -7,6 +7,10 @@ Use Python to spawn a pty.The pty module let’s you spawn a psuedo-terminal tha
 ```bash
 python -c 'import pty; pty.spawn("/bin/bash")'
 ```
+Or
+```bash
+script -qc /bin/bash /dev/null
+```
 
 Now, suspend the shell and return control to local terminal by pressing:
 
