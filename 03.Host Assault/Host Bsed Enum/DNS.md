@@ -1,7 +1,7 @@
 
 ---
 DNS does not have a central datebase.
-
+### Key DNS Concepts
 #### Types of DNS server
 `DNS Root Server`: The root servers of the DNS are responsible for the top-level domains (`TLD`). As the last instance, they
 are only requested if the name server does not respond.
@@ -15,8 +15,27 @@ are only requested if the name server does not respond.
 `Forwarding Server`: Forwarding DNS queries to another DNS server.
 
 `Resolver`: Resolvers are not authoritative DNS servers but perform name resolution locally in the computer or router.
-
 #### DNS Record
+In the `Domain Name System` (`DNS`), a `zone` is a distinct part of the domain namespace that a specific entity or administrator manages. Think of it as a virtual container for a set of domain names. For example, `example.com` and all its subdomains (like `mail.example.com` or `blog.example.com`) would typically belong to the same DNS zone.
+
+The zone file, a text file residing on a DNS server, defines the resource records within this zone, providing crucial information for translating domain names into IP addresses.
+```bash
+$TTL 3600 ; Default Time-To-Live (1 hour)
+@       IN SOA   ns1.example.com. admin.example.com. (
+                2024060401 ; Serial number (YYYYMMDDNN)
+                3600       ; Refresh interval
+                900        ; Retry interval
+                604800     ; Expire time
+                86400 )    ; Minimum TTL
+
+@       IN NS    ns1.example.com.
+@       IN NS    ns2.example.com.
+@       IN MX 10 mail.example.com.
+www     IN A     192.0.2.1
+mail    IN A     198.51.100.1
+ftp     IN CNAME www.example.com.
+```
+
 `A`: Returns an IPv4 address of the requested domain as a result.
 
 `AAAA`: Returns an IPv6 address of the requested domain.
@@ -105,7 +124,33 @@ A list of vulnerabilities targeting the BIND9 server can be found at [CVEdetail
 `allow-transfer`: Defines which hosts are allowed to receive zone transfers from the DNS server.
 
 `zone-statistics`: Collects statistical data of zones.
-
+### DNS Tools
+|Tool|Key Features|Use Cases|
+|---|---|---|
+|`dig`|Versatile DNS lookup tool that supports various query types (A, MX, NS, TXT, etc.) and detailed output.|Manual DNS queries, zone transfers (if allowed), troubleshooting DNS issues, and in-depth analysis of DNS records.|
+|`nslookup`|Simpler DNS lookup tool, primarily for A, AAAA, and MX records.|Basic DNS queries, quick checks of domain resolution and mail server records.|
+|`host`|Streamlined DNS lookup tool with concise output.|Quick checks of A, AAAA, and MX records.|
+|`dnsenum`|Automated DNS enumeration tool, dictionary attacks, brute-forcing, zone transfers (if allowed).|Discovering subdomains and gathering DNS information efficiently.|
+|`fierce`|DNS reconnaissance and subdomain enumeration tool with recursive search and wildcard detection.|User-friendly interface for DNS reconnaissance, identifying subdomains and potential targets.|
+|`dnsrecon`|Combines multiple DNS reconnaissance techniques and supports various output formats.|Comprehensive DNS enumeration, identifying subdomains, and gathering DNS records for further analysis.|
+|`theHarvester`|OSINT tool that gathers information from various sources, including DNS records (email addresses).|Collecting email addresses, employee information, and other data associated with a domain from multiple sources.|
+|`Online DNS Lookup Services`|User-friendly interfaces for performing DNS lookups.|Quick and easy DNS lookups, convenient when command-line tools are not available, checking for domain availability or basic information|
+#### Common dig Commands
+|   |
+|---|
+|Retrieves the IPv4 address (A record) associated with the domain.|
+|`dig domain.com AAAA`|Retrieves the IPv6 address (AAAA record) associated with the domain.|
+|`dig domain.com MX`|Finds the mail servers (MX records) responsible for the domain.|
+|`dig domain.com NS`|Identifies the authoritative name servers for the domain.|
+|`dig domain.com TXT`|Retrieves any TXT records associated with the domain.|
+|`dig domain.com CNAME`|Retrieves the canonical name (CNAME) record for the domain.|
+|`dig domain.com SOA`|Retrieves the start of authority (SOA) record for the domain.|
+|`dig @1.1.1.1 domain.com`|Specifies a specific name server to query; in this case 1.1.1.1|
+|`dig +trace domain.com`|Shows the full path of DNS resolution.|
+|`dig -x 192.168.1.1`|Performs a reverse lookup on the IP address 192.168.1.1 to find the associated host name. You may need to specify a name server.|
+|`dig +short domain.com`|Provides a short, concise answer to the query.|
+|`dig +noall +answer domain.com`|Displays only the answer section of the query output.|
+|`dig domain.com ANY`|Retrieves all available DNS records for the domain (Note: Many DNS servers ignore `ANY` queries to reduce load and prevent abuse, as per [RFC 8482](https://datatracker.ietf.org/doc/html/rfc8482)).|
 ### Footprinting
 #### NS Query
 ```bash
@@ -138,7 +183,7 @@ for sub in $(cat <subdomain_wordlist>);do dig $sub.example.com @10.129.14.128 | 
 ```
 
 Or  [DNSenum](https://github.com/fwaeytens/dnsenum)
-Perform `dig ns` + `dig axfr` + `Brute Force` + `Reverse Lookup` adll in once.
+Perform `dig ns` + `dig axfr` + `Brute Force` + `Reverse Lookup` all in once.
 ```bash
 dnsenum --dnsserver 10.129.14.128 --enum -p 0 -s 0 -o subdomains.txt -f <subdonaim_wordlist> example.com
 #-p 0: No google searching
