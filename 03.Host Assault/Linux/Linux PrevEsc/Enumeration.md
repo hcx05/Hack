@@ -295,9 +295,7 @@ for i in $(curl -s https://gtfobins.org/api.json | jq -r '.executables | keys[]'
 Trace System Calls
 
 ```bash
-
-	hcx05@htb[/htb]$ strace ping -c1 {random ip}
-
+hcx05@htb[/htb]$ strace ping -c1 {random ip}
 ```
 
 Script

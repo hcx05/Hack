@@ -29,7 +29,7 @@ cat alive_sites.txt | nuclei -t critical -t high
 ```
 
 ---
-Passive Banner Grabbing go to [Domain & DNS](../Passive%20Recon/Domain%20&%20DNS.md).
+Passive Banner Grabbing go to [Domain & DNS](../Passive%20Recon/OSINT/Domain%20&%20DNS.md).
 ### Banner Grabbing/ Web server Headers
 Add a DNS Server such as 1.1.1.1 and 8.8.8.8 to `/etc/resolv.conf`.
 

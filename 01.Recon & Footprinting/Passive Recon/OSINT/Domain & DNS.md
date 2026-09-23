@@ -32,7 +32,7 @@ for i in $(cat subdomainlist);do host $i | grep "has address" | grep target.com 
 #-f1,4: Only display row 1 and 4.
 ```
 
-[Web Probing & Tech Detect](../Active%20Recon/Web%20Probing%20&%20Tech%20Detect.md).
+[Web Probing & Tech Detect](../../Active%20Recon/Web%20Probing%20&%20Tech%20Detect.md).
 
 ### Shodan Banner Grabbing
 

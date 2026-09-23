@@ -4,7 +4,7 @@
 
 ---
 #### Passive Recon
-01.[Domain & DNS](../../01.Recon%20&%20Footprinting/Passive%20Recon/Domain%20&%20DNS.md)
+01.[Domain & DNS](../../01.Recon%20&%20Footprinting/Passive%20Recon/OSINT/Domain%20&%20DNS.md)
 
 02.[Cloud](../../01.Recon%20&%20Footprinting/Passive%20Recon/Cloud/Cloud.md)
 
