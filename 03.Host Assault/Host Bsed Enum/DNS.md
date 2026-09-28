@@ -166,6 +166,7 @@ dig CH TXT version.bind @<target_ip>
 ```
 
 #### AXFR Zone Transfer
+If port `53/tcp` is opne, it implies that zone transfers may be enabled because UDP can't response over 512 byte.
 AXFR: Asynchronous Full Transfer Zone
 ```bash
 dig axfr inlanefreight.htb @10.129.14.128
