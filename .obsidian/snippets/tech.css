@@ -8,7 +8,7 @@
   --red: #e22c3c;                /* Default Prefix: None */
   --red-orange: #e9404b;         /* Default Prefix: None */
   --orange: #ee6748;             /* Default Prefix: None */
-  --amber: #fa9f50;              /* Default Prefix: 05 */
+  --amber: #fa9f50;              /* Default Prefix: None */
   --yellow: #ffd85e;             /* Default Prefix: None */
   --lime: #97e768;               /* Default Prefix: None */
   --mint: #52eea3;               /* Default Prefix: 00 */
@@ -18,6 +18,7 @@
   --blue: #437cf3;               /* Default Prefix: 03 */
   --blue-violet: #6f51f4;        /* Default Prefix: None */
   --violet: #9446f8;             /* Default Prefix: 04 */
+  --orchid: #c523fb;             /* Default Prefix: 05 - violet 與 purple 的中間色 */
   --purple: #f600ff;             /* Default Prefix: 06 - 改為高亮的霓虹紫 */
   --magenta: #e54f9b;            /* Default Prefix: 07 */
   --hot-red: #e3365e;            /* Default Prefix: 08 */
@@ -161,23 +162,23 @@
 
 /* ------------------------------- AD -------------------------------- */
 .nav-folder-title[data-path^="05.AD"] {
-  color: var(--amber);
-  --nav-item-color-hover: color-mix(in srgb, var(--amber) var(--fg-contrast-amount), var(--contrast-color));
-  --nav-item-background-hover: color-mix(in srgb, var(--amber) var(--bg-contrast-amount), transparent);
-  --background-modifier-border-focus: color-mix(in srgb, var(--amber) 40%, transparent);
-  --nav-collapse-icon-color: color-mix(in srgb, var(--amber) 60%, transparent);
+  color: var(--orchid);
+  --nav-item-color-hover: color-mix(in srgb, var(--orchid) var(--fg-contrast-amount), var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb, var(--orchid) var(--bg-contrast-amount), transparent);
+  --background-modifier-border-focus: color-mix(in srgb, var(--orchid) 40%, transparent);
+  --nav-collapse-icon-color: color-mix(in srgb, var(--orchid) 60%, transparent);
 }
 .nav-folder-title[data-path^="05.AD"]:hover {
-  --nav-collapse-icon-color: color-mix(in srgb, var(--amber) 60%, var(--contrast-color));
+  --nav-collapse-icon-color: color-mix(in srgb, var(--orchid) 60%, var(--contrast-color));
 }
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05.AD"]) {
-  --nav-indentation-guide-color: color-mix(in srgb, var(--amber) var(--medium-contrast-amount), transparent);
+  --nav-indentation-guide-color: color-mix(in srgb, var(--orchid) var(--medium-contrast-amount), transparent);
 }
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05.AD"]) .nav-file-title {
-  color: color-mix(in srgb, var(--amber) var(--medium-contrast-amount), var(--default-text-color));
-  --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--amber) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
-  --background-modifier-border-focus: color-mix(in srgb, var(--amber) 40%, transparent);
-  --nav-item-background-active: color-mix(in srgb, var(--amber) var(--active-contrast-amount), transparent);
+  color: color-mix(in srgb, var(--orchid) var(--medium-contrast-amount), var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--orchid) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
+  --background-modifier-border-focus: color-mix(in srgb, var(--orchid) 40%, transparent);
+  --nav-item-background-active: color-mix(in srgb, var(--orchid) var(--active-contrast-amount), transparent);
 }
 
 /* ------------------------------- Pwn & Binary (路徑已修正) -------------------------------- */
