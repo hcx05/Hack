@@ -8,7 +8,7 @@
   --red: #e22c3c;                /* Default Prefix: None */
   --red-orange: #e9404b;         /* Default Prefix: None */
   --orange: #ee6748;             /* Default Prefix: None */
-  --amber: #fa9f50;              /* Default Prefix: None */
+  --amber: #fa9f50;              /* Default Prefix: 05 */
   --yellow: #ffd85e;             /* Default Prefix: None */
   --lime: #97e768;               /* Default Prefix: None */
   --mint: #52eea3;               /* Default Prefix: 00 */
@@ -18,9 +18,9 @@
   --blue: #437cf3;               /* Default Prefix: 03 */
   --blue-violet: #6f51f4;        /* Default Prefix: None */
   --violet: #9446f8;             /* Default Prefix: 04 */
-  --purple: #f600ff;             /* Default Prefix: 05 - 改為高亮的霓虹紫 */
-  --magenta: #e54f9b;            /* Default Prefix: 06 */
-  --hot-red: #e3365e;            /* Default Prefix: 07 */
+  --purple: #f600ff;             /* Default Prefix: 06 - 改為高亮的霓虹紫 */
+  --magenta: #e54f9b;            /* Default Prefix: 07 */
+  --hot-red: #e3365e;            /* Default Prefix: 08 */
   --cool-gray: #515768;          /* Default Prefix: 99 */
 
   --default-text-color: #d0d0d0;
@@ -159,21 +159,42 @@
   --nav-item-background-active: color-mix(in srgb, var(--violet) var(--active-contrast-amount), transparent);
 }
 
+/* ------------------------------- AD -------------------------------- */
+.nav-folder-title[data-path^="05.AD"] {
+  color: var(--amber);
+  --nav-item-color-hover: color-mix(in srgb, var(--amber) var(--fg-contrast-amount), var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb, var(--amber) var(--bg-contrast-amount), transparent);
+  --background-modifier-border-focus: color-mix(in srgb, var(--amber) 40%, transparent);
+  --nav-collapse-icon-color: color-mix(in srgb, var(--amber) 60%, transparent);
+}
+.nav-folder-title[data-path^="05.AD"]:hover {
+  --nav-collapse-icon-color: color-mix(in srgb, var(--amber) 60%, var(--contrast-color));
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05.AD"]) {
+  --nav-indentation-guide-color: color-mix(in srgb, var(--amber) var(--medium-contrast-amount), transparent);
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05.AD"]) .nav-file-title {
+  color: color-mix(in srgb, var(--amber) var(--medium-contrast-amount), var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--amber) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
+  --background-modifier-border-focus: color-mix(in srgb, var(--amber) 40%, transparent);
+  --nav-item-background-active: color-mix(in srgb, var(--amber) var(--active-contrast-amount), transparent);
+}
+
 /* ------------------------------- Pwn & Binary (路徑已修正) -------------------------------- */
-.nav-folder-title[data-path^="05.Pwn & Binary"] {
+.nav-folder-title[data-path^="06.Pwn & Binary"] {
   color: var(--purple);
   --nav-item-color-hover: color-mix(in srgb, var(--purple) var(--fg-contrast-amount), var(--contrast-color));
   --nav-item-background-hover: color-mix(in srgb, var(--purple) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--purple) 40%, transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--purple) 60%, transparent);
 }
-.nav-folder-title[data-path^="05.Pwn & Binary"]:hover {
+.nav-folder-title[data-path^="06.Pwn & Binary"]:hover {
   --nav-collapse-icon-color: color-mix(in srgb, var(--purple) 60%, var(--contrast-color));
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05.Pwn & Binary"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="06.Pwn & Binary"]) {
   --nav-indentation-guide-color: color-mix(in srgb, var(--purple) var(--medium-contrast-amount), transparent);
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05.Pwn & Binary"]) .nav-file-title {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="06.Pwn & Binary"]) .nav-file-title {
   color: color-mix(in srgb, var(--purple) var(--medium-contrast-amount), var(--default-text-color));
   --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--purple) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--purple) 40%, transparent);
@@ -181,20 +202,20 @@
 }
 
 /* ------------------------------- Post Exploitation -------------------------------- */
-.nav-folder-title[data-path^="06.Post Exploitation"] {
+.nav-folder-title[data-path^="07.Post Exploitation"] {
   color: var(--magenta);
   --nav-item-color-hover: color-mix(in srgb, var(--magenta) var(--fg-contrast-amount), var(--contrast-color));
   --nav-item-background-hover: color-mix(in srgb, var(--magenta) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--magenta) 40%, transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--magenta) 60%, transparent);
 }
-.nav-folder-title[data-path^="06.Post Exploitation"]:hover {
+.nav-folder-title[data-path^="07.Post Exploitation"]:hover {
   --nav-collapse-icon-color: color-mix(in srgb, var(--magenta) 60%, var(--contrast-color));
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="06.Post Exploitation"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="07.Post Exploitation"]) {
   --nav-indentation-guide-color: color-mix(in srgb, var(--magenta) var(--medium-contrast-amount), transparent);
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="06.Post Exploitation"]) .nav-file-title {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="07.Post Exploitation"]) .nav-file-title {
   color: color-mix(in srgb, var(--magenta) var(--medium-contrast-amount), var(--default-text-color));
   --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--magenta) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--magenta) 40%, transparent);
@@ -223,20 +244,20 @@
 }
 
 /* ------------------------------- Target Machine -------------------------------- */
-.nav-folder-title[data-path^="07.Target Machine"] {
+.nav-folder-title[data-path^="08.Target Machine"] {
   color: var(--hot-red);
   --nav-item-color-hover: color-mix(in srgb, var(--hot-red) var(--fg-contrast-amount), var(--contrast-color));
   --nav-item-background-hover: color-mix(in srgb, var(--hot-red) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--hot-red) 40%, transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--hot-red) 60%, transparent);
 }
-.nav-folder-title[data-path^="07.Target Machine"]:hover {
+.nav-folder-title[data-path^="08.Target Machine"]:hover {
   --nav-collapse-icon-color: color-mix(in srgb, var(--hot-red) 60%, var(--contrast-color));
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="07.Target Machine"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="08.Target Machine"]) {
   --nav-indentation-guide-color: color-mix(in srgb, var(--hot-red) var(--medium-contrast-amount), transparent);
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="07.Target Machine"]) .nav-file-title {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="08.Target Machine"]) .nav-file-title {
   color: color-mix(in srgb, var(--hot-red) var(--medium-contrast-amount), var(--default-text-color));
   --nav-item-background-hover: color-mix(in srgb, color-mix(in srgb, var(--hot-red) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
   --background-modifier-border-focus: color-mix(in srgb, var(--hot-red) 40%, transparent);
