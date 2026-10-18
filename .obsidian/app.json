@@ -2,7 +2,8 @@
   "useMarkdownLinks": true,
   "newLinkFormat": "relative",
   "promptDelete": false,
-  "livePreview": false,
+  "livePreview": true,
   "vimMode": true,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "attachmentFolderPath": "./assets"
 }
