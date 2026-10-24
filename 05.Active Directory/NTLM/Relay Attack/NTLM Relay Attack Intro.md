@@ -13,7 +13,7 @@ The `Relay` phase focuses on relaying the `NTLM` authentication of the client to
 #### Hunting for Relay Targets
 We must find machines that meet some criteria: if we target `SMB` on the relay targets, we need `SMB` `signing` to be `disabled` (we will study other protocols in an upcoming section). We can use multiple tools to enumerate SMB `signing` settings, including `RunFinger.py`, `CrackMapExec`, and `Nmap`.
 #### RunFinger
-[RunFinger.py](https://github.com/lgandx/Responder/blob/master/tools/RunFinger.py) is a tool included with `Responder` (found in `/home/htb-students/tools/Responder/tools/`) that can be used to enumerate the network for hosts with SMB `signing` off, in addition to finding whether some standard services are running on the hosts:
+[RunFinger.py](https://github.com/lgandx/Responder/blob/master/tools/RunFinger.py) is a tool included with `Responder` (found in `/Responder/tools/`) that can be used to enumerate the network for hosts with SMB `signing` off, in addition to finding whether some standard services are running on the hosts:
 ```bash
 hcx05@htb[/htb]$ python3 RunFinger.py -i 172.16.117.0/24
 
