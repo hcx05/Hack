@@ -75,19 +75,19 @@ hcx05@htb[/htb]$ kerbrute userenum -d INLANEFREIGHT.LOCAL --dc 172.16.5.5 jsmith
 
 2021/11/17 23:01:46 >  Using KDC(s):
 2021/11/17 23:01:46 >   172.16.5.5:88
-2021/11/17 23:01:46 >  [+] VALID USERNAME:       jjones@INLANEFREIGHT.LOCAL
-2021/11/17 23:01:46 >  [+] VALID USERNAME:       sbrown@INLANEFREIGHT.LOCAL
-2021/11/17 23:01:46 >  [+] VALID USERNAME:       tjohnson@INLANEFREIGHT.LOCAL
-2021/11/17 23:01:50 >  [+] VALID USERNAME:       evalentin@INLANEFREIGHT.LOCAL
+2021/11/17 23:01:46 >  [+] VALID USERNAME:       user@example.com
+2021/11/17 23:01:46 >  [+] VALID USERNAME:       user@example.com
+2021/11/17 23:01:46 >  [+] VALID USERNAME:       user@example.com
+2021/11/17 23:01:50 >  [+] VALID USERNAME:       user@example.com
 
  <SNIP>
  
-2021/11/17 23:01:51 >  [+] VALID USERNAME:       sgage@INLANEFREIGHT.LOCAL
-2021/11/17 23:01:51 >  [+] VALID USERNAME:       jshay@INLANEFREIGHT.LOCAL
-2021/11/17 23:01:51 >  [+] VALID USERNAME:       jhermann@INLANEFREIGHT.LOCAL
-2021/11/17 23:01:51 >  [+] VALID USERNAME:       whouse@INLANEFREIGHT.LOCAL
-2021/11/17 23:01:51 >  [+] VALID USERNAME:       emercer@INLANEFREIGHT.LOCAL
-2021/11/17 23:01:52 >  [+] VALID USERNAME:       wshepherd@INLANEFREIGHT.LOCAL
+2021/11/17 23:01:51 >  [+] VALID USERNAME:       user@example.com
+2021/11/17 23:01:51 >  [+] VALID USERNAME:       user@example.com
+2021/11/17 23:01:51 >  [+] VALID USERNAME:       user@example.com
+2021/11/17 23:01:51 >  [+] VALID USERNAME:       user@example.com
+2021/11/17 23:01:51 >  [+] VALID USERNAME:       user@example.com
+2021/11/17 23:01:52 >  [+] VALID USERNAME:       user@example.com
 2021/11/17 23:01:56 >  Done! Tested 48705 usernames (56 valid) in 9.940 seconds
 ```
 

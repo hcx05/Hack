@@ -93,9 +93,9 @@ ubuntu@WEB01:~/ptunnel-ng/src$ sudo ./ptunnel-ng -r[Target host ip] -R[Target ho
 ./ptunnel-ng: /lib/x86_64-linux-gnu/libselinux.so.1: no version information available 
 (required by ./ptunnel-ng) 
 [inf]: Starting ptunnel-ng 1.42. 
-[inf]: (c) 2004-2011 Daniel Stoedle, <daniels@cs.uit.no> 
-[inf]: (c) 2017-2019 Toni Uhlig, <matzeton@googlemail.com> 
-[inf]: Security features by Sebastien Raveau, <sebastien.raveau@epita.fr> 
+[inf]: (c) 2004-2011 Daniel Stoedle, <user@example.com> 
+[inf]: (c) 2017-2019 Toni Uhlig, <user@example.com> 
+[inf]: Security features by Sebastien Raveau, <user@example.com> 
 [inf]: Forwarding incoming ping packets over TCP. 
 [inf]: Ping proxy is listening in privileged mode. 
 [inf]: Dropping privileges now.

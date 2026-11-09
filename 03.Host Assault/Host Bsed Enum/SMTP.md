@@ -112,12 +112,12 @@ EHLO inlanefreight.htb
 250 CHUNKING
 
 
-MAIL FROM: <cry0l1t3@inlanefreight.htb>
+MAIL FROM: <user@example.com>
 
 250 2.1.0 Ok
 
 
-RCPT TO: <mrb3n@inlanefreight.htb> NOTIFY=success,failure
+RCPT TO: <user@example.com> NOTIFY=success,failure
 
 250 2.1.5 Ok
 
@@ -126,8 +126,8 @@ DATA
 
 354 End data with <CR><LF>.<CR><LF>
 
-From: <cry0l1t3@inlanefreight.htb>
-To: <mrb3n@inlanefreight.htb>
+From: <user@example.com>
+To: <user@example.com>
 Subject: DB
 Date: Tue, 28 Sept 2021 16:32:51 +0200
 Hey man, I am trying to access our XY-DB but the creds don't work. 
@@ -194,19 +194,19 @@ Host is up (0.00020s latency).
 PORT   STATE SERVICE
 25/tcp open  smtp
 | smtp-open-relay: Server is an open relay (16/16 tests)
-|  MAIL FROM:<> -> RCPT TO:<relaytest@nmap.scanme.org>
-|  MAIL FROM:<antispam@nmap.scanme.org> -> RCPT TO:<relaytest@nmap.scanme.org>
-|  MAIL FROM:<antispam@ESMTP> -> RCPT TO:<relaytest@nmap.scanme.org>
-|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<relaytest@nmap.scanme.org>
+|  MAIL FROM:<> -> RCPT TO:<user@example.com>
+|  MAIL FROM:<user@example.com> -> RCPT TO:<user@example.com>
+|  MAIL FROM:<antispam@ESMTP> -> RCPT TO:<user@example.com>
+|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<user@example.com>
 |  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<relaytest%nmap.scanme.org@[10.129.14.128]>
 |  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<relaytest%nmap.scanme.org@ESMTP>
-|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<"relaytest@nmap.scanme.org">
+|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<"user@example.com">
 |  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<"relaytest%nmap.scanme.org">
-|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<relaytest@nmap.scanme.org@[10.129.14.128]>
-|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<"relaytest@nmap.scanme.org"@[10.129.14.128]>
-|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<relaytest@nmap.scanme.org@ESMTP>
-|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<@[10.129.14.128]:relaytest@nmap.scanme.org>
-|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<@ESMTP:relaytest@nmap.scanme.org>
+|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<user@example.com@[10.129.14.128]>
+|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<"user@example.com"@[10.129.14.128]>
+|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<user@example.com@ESMTP>
+|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<@[10.129.14.128]:user@example.com>
+|  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<@ESMTP:user@example.com>
 |  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<nmap.scanme.org!relaytest>
 |  MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<nmap.scanme.org!relaytest@[10.129.14.128]>
 |_ MAIL FROM:<antispam@[10.129.14.128]> -> RCPT TO:<nmap.scanme.org!relaytest@ESMTP>

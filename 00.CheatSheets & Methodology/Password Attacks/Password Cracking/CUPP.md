@@ -25,7 +25,7 @@ ___________
        \   ,__,             # Passwords
         \  (oo)____         # Profiler
            (__)    )\
-              ||--|| *      [ Muris Kurgas | j0rgan@remote-exploit.org ]
+              ||--|| *      [ Muris Kurgas | user@example.com ]
                             [ Mebus | https://github.com/Mebus/]
 
 

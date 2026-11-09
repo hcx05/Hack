@@ -84,7 +84,7 @@ Note that this shell environment is not fully interactive, so each command issue
 [Windapsearch](https://github.com/ropnop/windapsearch) is a handy Python script we can use to enumerate users, groups, and computers from a Windows domain by utilizing LDAP queries.
 #### Windapsearch - Domain Admins
 ```bash
-hcx05@htb[/htb]$ python3 windapsearch.py --dc-ip 172.16.5.5 -u forend@inlanefreight.local -p Klmcargo2 --da
+hcx05@htb[/htb]$ python3 windapsearch.py --dc-ip 172.16.5.5 -u user@example.com -p Klmcargo2 --da
 
 [+] Using Domain Controller at: 172.16.5.5
 [+] Getting defaultNamingContext from Root DSE
@@ -97,18 +97,18 @@ hcx05@htb[/htb]$ python3 windapsearch.py --dc-ip 172.16.5.5 -u forend@inlanefrei
 [+] Found 28 Domain Admins:
 
 cn: Administrator
-userPrincipalName: administrator@inlanefreight.local
+userPrincipalName: user@example.com
 
 cn: lab_adm
 
 cn: Matthew Morgan
-userPrincipalName: mmorgan@inlanefreight.local
+userPrincipalName: user@example.com
 
 <SNIP>
 ```
 The `--da` (enumerate domain admins group members ) option and the `-PU` ( find privileged users) options. The `-PU` option is interesting because it will perform a recursive search for users with nested group membership.
 ```bash
-hcx05@htb[/htb]$ python3 windapsearch.py --dc-ip 172.16.5.5 -u forend@inlanefreight.local -p Klmcargo2 -PU
+hcx05@htb[/htb]$ python3 windapsearch.py --dc-ip 172.16.5.5 -u user@example.com -p Klmcargo2 -PU
 
 [+] Using Domain Controller at: 172.16.5.5
 [+] Getting defaultNamingContext from Root DSE
@@ -121,18 +121,18 @@ hcx05@htb[/htb]$ python3 windapsearch.py --dc-ip 172.16.5.5 -u forend@inlanefrei
 [+]     Found 28 nested users for group Domain Admins:
 
 cn: Administrator
-userPrincipalName: administrator@inlanefreight.local
+userPrincipalName: user@example.com
 
 cn: lab_adm
 
 cn: Angela Dunn
-userPrincipalName: adunn@inlanefreight.local
+userPrincipalName: user@example.com
 
 cn: Matthew Morgan
-userPrincipalName: mmorgan@inlanefreight.local
+userPrincipalName: user@example.com
 
 cn: Dorothy Click
-userPrincipalName: dclick@inlanefreight.local
+userPrincipalName: user@example.com
 
 <SNIP>
 
@@ -140,12 +140,12 @@ userPrincipalName: dclick@inlanefreight.local
 [+]     Found 3 nested users for group Enterprise Admins:
 
 cn: Administrator
-userPrincipalName: administrator@inlanefreight.local
+userPrincipalName: user@example.com
 
 cn: lab_adm
 
 cn: Sharepoint Admin
-userPrincipalName: sp-admin@INLANEFREIGHT.LOCAL
+userPrincipalName: user@example.com
 
 <SNIP>
 ```

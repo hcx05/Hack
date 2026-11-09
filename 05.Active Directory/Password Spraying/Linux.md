@@ -224,19 +224,19 @@ hcx05@htb[/htb]$ ./windapsearch.py --dc-ip [Target_Ip] -u "" -U
 cn: Guest
 
 cn: Htb Student
-userPrincipalName: htb-student@inlanefreight.local
+userPrincipalName: user@example.com
 
 cn: Annie Vazquez
-userPrincipalName: avazquez@inlanefreight.local
+userPrincipalName: user@example.com
 
 cn: Paul Falcon
-userPrincipalName: pfalcon@inlanefreight.local
+userPrincipalName: user@example.com
 
 cn: Fae Anthony
-userPrincipalName: fanthony@inlanefreight.local
+userPrincipalName: user@example.com
 
 cn: Walter Dillard
-userPrincipalName: wdillard@inlanefreight.local
+userPrincipalName: user@example.com
 
 <SNIP>
 ```

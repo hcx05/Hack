@@ -6,7 +6,7 @@ Extract the version of web servers, supporting frameworks, and applications usin
 hcx05@htb[/htb]$ whatweb 10.10.10.121
 #Use -a 3 or 4 to preform a more aggressive scan.
 
-http://10.10.10.121 [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], Email[license@php.net], HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[10.10.10.121], Title[PHP 7.4.3 - phpinfo()]
+http://10.10.10.121 [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], Email[user@example.com], HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[10.10.10.121], Title[PHP 7.4.3 - phpinfo()]
 ```
 
 ### httpx
