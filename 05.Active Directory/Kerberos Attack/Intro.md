@@ -18,3 +18,4 @@ The Kerberos protocol uses port 88 (both TCP and UDP).
 |5. The user presents the TGS to the service, and if it is valid, the user is permitted to connect to the resource (AP_REQ).|
 
 ![](assets/Pasted%20image%2020261017133508.png)
+[Detail](obsidian://open?vault=Hack&file=05.Active%20Directory%2FKerberos%20Attack%2FKerberos%20in%20detail)
