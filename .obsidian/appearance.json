@@ -7,5 +7,6 @@
     "tech02",
     "tech"
   ],
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "showRibbon": true
 }
